@@ -1,0 +1,72 @@
+PMU type: Core (p-core)
+Group 0:
+INST_RETIRED.ANY: event id 2
+CPU_CLK_UNHALTED.THREAD: event id 0
+CPU_CLK_UNHALTED.REF_TSC: event id 1
+CPU_CLK_UNHALTED.DISTRIBUTED: event id 3
+
+CCCR
+reg_type       = 1	event_id       = g	reg_id         = 38f	reg_value      = 700000001
+reg_type       = 1	event_id       = g	reg_id         = 390	reg_value      = 700000001
+reg_type       = 1	event_id       = g	reg_id         = 3f1	reg_value      = 700000001
+reg_type       = 1	event_id       = g	reg_id         = 1d9	reg_value      = 1800
+reg_type       = 1	event_id       = g	reg_id         = 38d	reg_value      = 333
+reg_type       = 1	event_id       = g	reg_id         = 3f2	reg_value      = 0
+reg_type       = 1	event_id       = g	reg_id         = 14ce	reg_value      = 0
+reg_type       = 1	event_id       = 3	reg_id         = 186	reg_value      = 4302ec
+
+ESCR
+
+DATA
+reg_type       = 4	event_id       = 2	reg_id         = 309	reg_value      = ffffffd853c0
+reg_type       = 4	event_id       = 0	reg_id         = 30a	reg_value      = ffffffd853c0
+reg_type       = 4	event_id       = 1	reg_id         = 30b	reg_value      = ffffffd853c0
+reg_type       = 4	event_id       = 3	reg_id         = c1	reg_value      = ffffffd853c0
+
+PMU type: Core (e-core)
+Group 0:
+INST_RETIRED.ANY: event id 2
+CPU_CLK_UNHALTED.THREAD: event id 0
+CPU_CLK_UNHALTED.REF_TSC: event id 1
+
+CCCR
+reg_type       = 1	event_id       = g	reg_id         = 38f	reg_value      = 700000000
+reg_type       = 1	event_id       = g	reg_id         = 390	reg_value      = 700000000
+reg_type       = 1	event_id       = g	reg_id         = 3f1	reg_value      = 700000000
+reg_type       = 1	event_id       = g	reg_id         = 1d9	reg_value      = 1800
+reg_type       = 1	event_id       = g	reg_id         = 38d	reg_value      = 333
+reg_type       = 1	event_id       = g	reg_id         = 3f2	reg_value      = 0
+reg_type       = 1	event_id       = g	reg_id         = 14ce	reg_value      = 0
+
+ESCR
+
+DATA
+reg_type       = 4	event_id       = 2	reg_id         = 309	reg_value      = ffffffd853c0
+reg_type       = 4	event_id       = 0	reg_id         = 30a	reg_value      = ffffffd853c0
+reg_type       = 4	event_id       = 1	reg_id         = 30b	reg_value      = ffffffd853c0
+
+PMU type: Uncore (imc)
+Number of units: 2
+Group 0:
+UNC_M_CAS_COUNT_RD: event id 4
+UNC_M_CAS_COUNT_WR: event id 5
+
+
+CCCR
+idx = 1	reg_type       = 1	event_id = g	reg_id         = 1c0	reg_value      = 7
+idx = 2	reg_type       = 1	event_id = g	reg_id         = 101c0	reg_value      = 7
+idx = 3	reg_type       = 2	event_id = g	reg_id         = 1c4	reg_value      = 301
+idx = 4	reg_type       = 2	event_id = g	reg_id         = 101c4	reg_value      = 301
+idx = 5	reg_type       = 5	event_id = 4	reg_id         = 1d0	reg_value      = 20022
+idx = 6	reg_type       = 5	event_id = 5	reg_id         = 1d4	reg_value      = 20023
+idx = 10	reg_type       = 5	event_id = 4	reg_id         = 101d0	reg_value      = 20022
+idx = 11	reg_type       = 5	event_id = 5	reg_id         = 101d4	reg_value      = 20023
+
+ESCR
+
+DATA
+idx = 17	reg_type       = 4	event_id       = 4	reg_id         = d9e8	reg_value      = 0
+idx = 18	reg_type       = 4	event_id       = 5	reg_id         = d9f0	reg_value      = 0
+idx = 22	reg_type       = 4	event_id       = 4	reg_id         = 1d9e8	reg_value      = 0
+idx = 23	reg_type       = 4	event_id       = 5	reg_id         = 1d9f0	reg_value      = 0
+

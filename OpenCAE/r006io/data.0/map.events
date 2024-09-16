@@ -1,0 +1,12 @@
+0;cpu_atom/period=0x27ac40,event=0x3c,name='CPU_CLK_UNHALTED.THREAD[ATOM]'/Dukpp;CPU_CLK_UNHALTED.THREAD[ATOM];0
+1;cpu_atom/period=0x27ac40,umask=0x3,name='CPU_CLK_UNHALTED.REF_TSC[ATOM]'/Dukpp;CPU_CLK_UNHALTED.REF_TSC[ATOM];0
+2;cpu_atom/period=0x27ac40,event=0xc0,name='INST_RETIRED.ANY[ATOM]'/Dukpp;INST_RETIRED.ANY[ATOM];0
+3;cpu_core/period=0x27ac40,event=0x3c,name='CPU_CLK_UNHALTED.THREAD[CORE]'/Dukpp;CPU_CLK_UNHALTED.THREAD[CORE];0
+4;cpu_core/period=0x27ac40,umask=0x3,name='CPU_CLK_UNHALTED.REF_TSC[CORE]'/Dukpp;CPU_CLK_UNHALTED.REF_TSC[CORE];0
+5;cpu_core/period=0x27ac40,event=0xc0,name='INST_RETIRED.ANY[CORE]'/Dukppp;INST_RETIRED.ANY[CORE];0
+6;cpu_core/period=0x27ac40,event=0xec,umask=0x2,name='CPU_CLK_UNHALTED.DISTRIBUTED[CORE]'/ukpp;CPU_CLK_UNHALTED.DISTRIBUTED[CORE];0
+7;uncore_imc_0/period=0x0,event=0x22,name='UNC_M_CAS_COUNT_RD[UNIT0]'/;UNC_M_CAS_COUNT_RD[UNIT0];0
+8;uncore_imc_1/period=0x0,event=0x22,name='UNC_M_CAS_COUNT_RD[UNIT1]'/;UNC_M_CAS_COUNT_RD[UNIT1];0
+9;uncore_imc_0/period=0x0,event=0x23,name='UNC_M_CAS_COUNT_WR[UNIT0]'/;UNC_M_CAS_COUNT_WR[UNIT0];0
+10;uncore_imc_1/period=0x0,event=0x23,name='UNC_M_CAS_COUNT_WR[UNIT1]'/;UNC_M_CAS_COUNT_WR[UNIT1];0
+mode=4

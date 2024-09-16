@@ -1,0 +1,78 @@
+Using CPUID GenuineIntel-6-9A-4
+DEBUGINFOD_URLS=
+Compression enabled, disabling build id collection at the end of the session.
+nr_cblocks: 0
+affinity: SYS
+mmap flush: 1
+comp level: 1
+mmap size 528384B
+Control descriptor is not initialized
+couldn't open /proc/1/task/1/maps
+couldn't open /proc/677/task/677/maps
+couldn't open /proc/711/task/711/maps
+couldn't open /proc/749/task/749/maps
+couldn't open /proc/1156/task/1156/maps
+couldn't open /proc/1157/task/1157/maps
+couldn't open /proc/1202/task/1202/maps
+couldn't open /proc/1215/task/1215/maps
+couldn't open /proc/1216/task/1216/maps
+couldn't open /proc/1218/task/1218/maps
+couldn't open /proc/1219/task/1219/maps
+couldn't open /proc/1222/task/1222/maps
+couldn't open /proc/1223/task/1223/maps
+couldn't open /proc/1224/task/1224/maps
+couldn't open /proc/1225/task/1225/maps
+couldn't open /proc/1227/task/1227/maps
+couldn't open /proc/1228/task/1228/maps
+couldn't open /proc/1232/task/1232/maps
+couldn't open /proc/1233/task/1233/maps
+couldn't open /proc/1234/task/1234/maps
+couldn't open /proc/1235/task/1235/maps
+couldn't open /proc/1237/task/1237/maps
+couldn't open /proc/1240/task/1240/maps
+couldn't open /proc/1241/task/1241/maps
+couldn't open /proc/1243/task/1243/maps
+couldn't open /proc/1255/task/1255/maps
+couldn't open /proc/1274/task/1274/maps
+couldn't open /proc/1286/task/1286/maps
+couldn't open /proc/1310/task/1310/maps
+couldn't open /proc/1341/task/1341/maps
+couldn't open /proc/1342/task/1342/maps
+couldn't open /proc/1353/task/1353/maps
+couldn't open /proc/1426/task/1426/maps
+couldn't open /proc/1435/task/1435/maps
+couldn't open /proc/1439/task/1439/maps
+couldn't open /proc/1444/task/1444/maps
+couldn't open /proc/1454/task/1454/maps
+couldn't open /proc/1455/task/1455/maps
+couldn't open /proc/1456/task/1456/maps
+couldn't open /proc/1487/task/1487/maps
+couldn't open /proc/1499/task/1499/maps
+couldn't open /proc/1506/task/1506/maps
+couldn't open /proc/1567/task/1567/maps
+couldn't open /proc/1592/task/1592/maps
+couldn't open /proc/1903/task/1903/maps
+couldn't open /proc/2276/task/2276/maps
+couldn't open /proc/2497/task/2497/maps
+couldn't open /proc/2526/task/2526/maps
+couldn't open /proc/2537/task/2537/maps
+couldn't open /proc/2601/task/2601/maps
+couldn't open /proc/2653/task/2653/maps
+couldn't open /proc/3241/task/3241/maps
+couldn't open /proc/3297/task/3297/maps
+couldn't open /proc/3510/task/3510/maps
+couldn't open /proc/3578/task/3578/maps
+couldn't open /proc/4302/task/4302/maps
+couldn't open /proc/1711673/task/1711673/maps
+couldn't open /proc/2572858/task/2572858/maps
+couldn't open /proc/2574541/task/2574541/maps
+couldn't open /proc/2575087/task/2575087/maps
+couldn't open /proc/2575337/task/2575337/maps
+couldn't open /proc/2575481/task/2575481/maps
+couldn't open /proc/2575529/task/2575529/maps
+couldn't open /proc/2575564/task/2575564/maps
+
+2576086:perf-sync:ready:TSC=465478086576694
+[ perf record: Woken up 1 times to write data ]
+failed to write feature CPU_PMU_CAPS
+[ perf record: Captured and wrote 13.087 MB /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/OpenCAE/r006io/data.0/temp.dryrun.perf, compressed (original 0.017 MB, ratio is 5.786) ]

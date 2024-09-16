@@ -1,0 +1,105 @@
+0 [139989904504704] INFO perfrun.launcher <> - Launcher main begin
+1 [139989904504704] INFO perfrun.launcher <> - MessageCatalogInit finished
+1 [139989904504704] INFO perfrun.launcher <> - Launcher instance created
+1 [139989904504704] INFO perfrun.launcher <> - argc = 7; cmdline = /home/brianlee/intel/oneapi/vtune/2024.1/bin64/amplxe-runss --ui-output-format xml --ui-output-fd 14 --option-file /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/OpenCAE/r012tr/config/runss.options 
+1110 [139989904504704] INFO perfrun.launcher <> - create msngr2::ICliToolContext
+1110 [139989904504704] INFO perfrun.launcher <> - create file finder object
+1110 [139989904504704] INFO perfrun.launcher <> - create a result directory: pattern = /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/OpenCAE/r012tr pid = 4294967295
+1114 [139989904504704] INFO perfrun.sdk <> - checked that the directory /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/OpenCAE/r012tr is a local directory
+1114 [139989904504704] INFO perfrun.sdk <> - the directory /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/OpenCAE/r012tr is a local directory with FS type ID 2435016766
+1114 [139989904504704] INFO perfrun.launcher <> - create data directory = /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/OpenCAE/r012tr/data.0
+1114 [139989904504704] INFO perfrun.launcher <> - Creating the master collection flag
+1117 [139989904504704] INFO perfrun.launcher <> - Done creating the master collection flag
+1119 [139989681702592] INFO perfrun.launcher <> - plugin [remoteplug] was disabled because it doesn't support the given collection type.
+1119 [139989681702592] INFO perfrun.sdk <> - Allocating TMU :/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/OpenCAE/r012tr/data.0/systemcollector-2620858-fedora.sc
+1119 [139989681702592] INFO perfrun.system <> - Tpss based collection
+1120 [139989681702592] INFO perfrun.launcher <> - plugin [ptracecollector] was disabled because it doesn't support the given collection type.
+1120 [139989681702592] INFO perfrun.launcher <> - plugin [gpu] was disabled because it doesn't support the given collection type.
+1120 [139989681702592] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+1120 [139989681702592] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+1120 [139989681702592] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+1120 [139989681702592] INFO perfrun.mrte <> - system-wide mode is 0
+1120 [139989681702592] INFO perfrun.mrte <> - Getting  mrte profiling environment ...
+1129 [139989681702592] INFO perfrun.mrte <> - INTEL_MRTE_DATA_DIR=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/OpenCAE/r012tr/data.0
+1130 [139989681702592] INFO perfrun.mrte <> - INTEL_MRTE_HOST_NAME=fedora
+1130 [139989681702592] INFO perfrun.mrte <> - JAVA_TOOL_OPTIONS=-agentlib:amplxe_tpssmrte_javaprof_1.0 -Dsun.boot.library.path=/home/brianlee/intel/oneapi/vtune/2024.1/lib32/runtime:/home/brianlee/intel/oneapi/vtune/2024.1/lib64/runtime
+1130 [139989681702592] INFO perfrun.mrte <> - LD_LIBRARY_PATH=/home/brianlee/intel/oneapi/vtune/2024.1/lib32/runtime:/home/brianlee/intel/oneapi/vtune/2024.1/lib64/runtime:/home/brianlee/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8:/home/brianlee/intel/oneapi/mpi/2021.12/opt/mpi/libfabric/lib:/home/brianlee/intel/oneapi/mpi/2021.12/lib:/home/brianlee/intel/oneapi/mkl/2024.1/lib:/home/brianlee/intel/oneapi/ippcp/2021.11/lib/:/home/brianlee/intel/oneapi/ipp/2021.11/lib:/home/brianlee/intel/oneapi/dpl/2022.5/lib:/home/brianlee/intel/oneapi/dnnl/2024.1/lib:/home/brianlee/intel/oneapi/debugger/2024.1/opt/debugger/lib:/home/brianlee/intel/oneapi/dal/2024.2/lib:/home/brianlee/intel/oneapi/compiler/2024.1/opt/oclfpga/host/linux64/lib:/home/brianlee/intel/oneapi/compiler/2024.1/opt/compiler/lib:/home/brianlee/intel/oneapi/compiler/2024.1/lib:/home/brianlee/intel/oneapi/ccl/2021.12/lib/
+1130 [139989681702592] INFO perfrun.mrte <> - CORECLR_ENABLE_PROFILING=1
+1130 [139989681702592] INFO perfrun.mrte <> - CORECLR_PROFILER={AA5E4821-E3B1-479c-B7FF-5AD047D22CED}
+1130 [139989681702592] INFO perfrun.mrte <> - CORECLR_PROFILER_PATH=/home/brianlee/intel/oneapi/vtune/2024.1/lib64/libamplxe_samplingmrte_clrprof_1.0.so
+1130 [139989681702592] INFO perfrun.mrte <> - INTEL_MRTE_PROFILER_MODE=mixed
+1130 [139989681702592] INFO perfrun.mrte <> - Data directory: /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/OpenCAE/r012tr/data.0
+1130 [139989681702592] INFO perfrun.mrte <> - Mrte plugin is initialized
+1130 [139989681702592] INFO perfrun.launcher <> - plugin [emon] was disabled because it doesn't support the given collection type.
+1130 [139989681702592] INFO perfrun.launcher <> - plugin [cuscol] was disabled because it doesn't support the given collection type.
+1130 [139989681702592] INFO perfrun.launcher <> - plugin [stdsrc] was disabled because it doesn't support the given collection type.
+1130 [139989681702592] INFO perfrun.launcher <> - plugin [sep] was disabled because it doesn't support the given collection type.
+1130 [139989681702592] INFO perfrun.launcher <> - plugin [vtsspp] was disabled because it doesn't support the given collection type.
+1130 [139989681702592] INFO perfrun.launcher <> - plugin [perf] was disabled because it doesn't support the given collection type.
+1130 [139989681702592] INFO perfrun.launcher <> - plugin [aoclprofile] was disabled because it doesn't support the given collection type.
+1130 [139989681702592] INFO perfrun.tpss <> - initialize tpss controller
+1130 [139989681702592] INFO perfrun.tpss <> - configure collection mode: value = cpu:counters:nostack
+1131 [139989681702592] INFO perfrun.tpss <> - configure collection mode: value = cpu:stack
+1131 [139989681702592] INFO perfrun.tpss <> - configure collection mode: value = threading:stack
+1131 [139989681702592] INFO perfrun.tpss <> - configure collection mode: value = waiting:stack
+1131 [139989681702592] INFO perfrun.tpss <> - configure collection mode: value = io:stack
+1131 [139989681702592] INFO perfrun.tpss <> - default obj-size-min=1024
+1131 [139989681702592] INFO perfrun.tpss <> - default hash-table-size=0
+1131 [139989681702592] INFO perfrun.launcher <> - plugin [media] was disabled because it doesn't support the given collection type.
+1131 [139989681702592] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+1131 [139989681702592] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+1131 [139989681702592] INFO perfrun.launcher <> - plugin [parallelfs] was disabled because it doesn't support the given collection type.
+1131 [139989681702592] INFO perfrun.launcher <> - plugin [power] was disabled because it doesn't support the given collection type.
+1131 [139989681702592] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+1131 [139989681702592] INFO perfrun.launcher <> - plugin [ipmwatch] was disabled because it doesn't support the given collection type.
+1131 [139989681702592] INFO perfrun.launcher <> - plugin [os_counters] was disabled because it doesn't support the given collection type.
+1131 [139989681702592] INFO perfrun.launcher <> - plugin [l0_metrics] was disabled because it doesn't support the given collection type.
+1131 [139989904504704] INFO perfrun.launcher <> - set environment variable: LD_LIBRARY_PATH = /home/brianlee/intel/oneapi/vtune/2024.1/lib32/runtime:/home/brianlee/intel/oneapi/vtune/2024.1/lib64/runtime:/home/brianlee/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8:/home/brianlee/intel/oneapi/mpi/2021.12/opt/mpi/libfabric/lib:/home/brianlee/intel/oneapi/mpi/2021.12/lib:/home/brianlee/intel/oneapi/mkl/2024.1/lib:/home/brianlee/intel/oneapi/ippcp/2021.11/lib/:/home/brianlee/intel/oneapi/ipp/2021.11/lib:/home/brianlee/intel/oneapi/dpl/2022.5/lib:/home/brianlee/intel/oneapi/dnnl/2024.1/lib:/home/brianlee/intel/oneapi/debugger/2024.1/opt/debugger/lib:/home/brianlee/intel/oneapi/dal/2024.2/lib:/home/brianlee/intel/oneapi/compiler/2024.1/opt/oclfpga/host/linux64/lib:/home/brianlee/intel/oneapi/compiler/2024.1/opt/compiler/lib:/home/brianlee/intel/oneapi/compiler/2024.1/lib:/home/brianlee/intel/oneapi/ccl/2021.12/lib/
+1131 [139989904504704] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY32 = /home/brianlee/intel/oneapi/vtune/2024.1/lib32/runtime/libittnotify_collector.so
+1132 [139989904504704] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY64 = /home/brianlee/intel/oneapi/vtune/2024.1/lib64/runtime/libittnotify_collector.so
+1132 [139989904504704] INFO perfrun.launcher <> - set environment variable: INTEL_ITTNOTIFY_GROUPS = 
+1132 [139989904504704] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER32 = /home/brianlee/intel/oneapi/vtune/2024.1/lib32/runtime/libittnotify_collector.so
+1132 [139989904504704] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER64 = /home/brianlee/intel/oneapi/vtune/2024.1/lib64/runtime/libittnotify_collector.so
+1132 [139989904504704] INFO perfrun.launcher <> - set environment variable: OMP_TOOL_LIBRARIES = /home/brianlee/intel/oneapi/vtune/2024.1/lib32/runtime/libittnotify_collector.so:/home/brianlee/intel/oneapi/vtune/2024.1/lib64/runtime/libittnotify_collector.so
+1132 [139989904504704] INFO perfrun.launcher <> - set environment variable: ENABLE_JITPROFILING = 1
+1132 [139989904504704] INFO perfrun.launcher <> - set environment variable: CL_CONFIG_USE_VTUNE = True
+1132 [139989904504704] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_DATA_DIR = /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/OpenCAE/r012tr/data.0
+1133 [139989904504704] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_HOST_NAME = fedora
+1133 [139989904504704] INFO perfrun.launcher <> - set environment variable: JAVA_TOOL_OPTIONS = -agentlib:amplxe_tpssmrte_javaprof_1.0 -Dsun.boot.library.path=/home/brianlee/intel/oneapi/vtune/2024.1/lib32/runtime:/home/brianlee/intel/oneapi/vtune/2024.1/lib64/runtime
+1133 [139989904504704] INFO perfrun.launcher <> - set environment variable: LD_LIBRARY_PATH = /home/brianlee/intel/oneapi/vtune/2024.1/lib32/runtime:/home/brianlee/intel/oneapi/vtune/2024.1/lib64/runtime:/home/brianlee/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8:/home/brianlee/intel/oneapi/mpi/2021.12/opt/mpi/libfabric/lib:/home/brianlee/intel/oneapi/mpi/2021.12/lib:/home/brianlee/intel/oneapi/mkl/2024.1/lib:/home/brianlee/intel/oneapi/ippcp/2021.11/lib/:/home/brianlee/intel/oneapi/ipp/2021.11/lib:/home/brianlee/intel/oneapi/dpl/2022.5/lib:/home/brianlee/intel/oneapi/dnnl/2024.1/lib:/home/brianlee/intel/oneapi/debugger/2024.1/opt/debugger/lib:/home/brianlee/intel/oneapi/dal/2024.2/lib:/home/brianlee/intel/oneapi/compiler/2024.1/opt/oclfpga/host/linux64/lib:/home/brianlee/intel/oneapi/compiler/2024.1/opt/compiler/lib:/home/brianlee/intel/oneapi/compiler/2024.1/lib:/home/brianlee/intel/oneapi/ccl/2021.12/lib/
+1133 [139989904504704] INFO perfrun.launcher <> - set environment variable: CORECLR_ENABLE_PROFILING = 1
+1133 [139989904504704] INFO perfrun.launcher <> - set environment variable: CORECLR_PROFILER = {AA5E4821-E3B1-479c-B7FF-5AD047D22CED}
+1133 [139989904504704] INFO perfrun.launcher <> - set environment variable: CORECLR_PROFILER_PATH = /home/brianlee/intel/oneapi/vtune/2024.1/lib64/libamplxe_samplingmrte_clrprof_1.0.so
+1133 [139989904504704] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_PROFILER_MODE = mixed
+1133 [139989904504704] INFO perfrun.launcher <> - RpcServer: run RPC server to handle requests
+1134 [139989904504704] INFO perfrun.launcher <> - Launcher: command line to start before modification = /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/testOpenCAEPoro mpirun -n 4 ./testOpenCAEPoro ./data/test/test.data
+1134 [139989904504704] INFO perfrun.launcher <> - Launcher: command line to start after modification = /home/brianlee/intel/oneapi/vtune/2024.1/bin64/pin -error_file /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/OpenCAE/r012tr/data.0/pinerr.tpsslog -detach_reattach -follow_execv -tool_load_option deepbind -t64 /home/brianlee/intel/oneapi/vtune/2024.1/lib64/libtpsstool.so -t /home/brianlee/intel/oneapi/vtune/2024.1/lib32/libtpsstool.so -server_name tpss_ipc.2620858 -prd_dir /home/brianlee/intel/oneapi/vtune/2024.1 -- /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/testOpenCAEPoro mpirun -n 4 ./testOpenCAEPoro ./data/test/test.data
+1134 [139989904504704] INFO perfrun.launcher <> - ProcessCreator object was created
+1135 [139989904504704] INFO perfrun.launcher <> - Launcher: the process was started in suspend mode
+1137 [139989681702592] WARN perfrun.system <> - Could not do anything with /sys/kernel/debug/kvm: boost::filesystem::status: Permission denied [system:13]: "/sys/kernel/debug/kvm", at file: vcs/perfrun1/plugins/system/src/trace_writer.cpp:787
+1138 [139989681702592] WARN perfrun.sdk <> - Failed to find xl binary on any of the system paths: /bin, /sbin, /usr/bin, /usr/sbin., at file: vcs/perfrun1/sdk/src/utils.cpp:204
+1138 [139989681702592] WARN perfrun.system <> - Could not start ContainerMapping collector, at file: vcs/perfrun1/plugins/system/src/controller.cpp:448
+1144 [139989681702592] INFO perfrun.vdso <> - Helper runtool '/home/brianlee/intel/oneapi/vtune/2024.1/bin32/amplxe-runss -dump-vdso -r /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/OpenCAE/r012tr --tmp-dir /tmp/amplxe-tmp-brianlee' returned 1
+1296 [139989681702592] INFO perfrun.vdso <> - Helper runtool '/home/brianlee/intel/oneapi/vtune/2024.1/bin64/amplxe-runss -dump-vdso -r /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/OpenCAE/r012tr --tmp-dir /tmp/amplxe-tmp-brianlee' returned 0
+1297 [139989681702592] INFO perfrun.itt <> - start itt controller for pid #2620863
+1297 [139989681702592] INFO perfrun.tpss <> - start tpss controller for pid #2620863
+1348 [139989904504704] INFO perfrun.launcher <> - Launcher: all plugins were started
+1348 [139989904504704] INFO perfrun.launcher <> - DirectoryMonitor object was created
+1348 [139989904504704] INFO perfrun.launcher <> - DirectoryMonitor: a callback was added
+1348 [139989904504704] INFO perfrun.launcher <> - DirectoryMonitor was started with pingTime = 1000
+1348 [139989904504704] INFO perfrun.launcher <> - DeadlineTimer is going to be constructed
+1348 [139989904504704] INFO perfrun.launcher <> - DeadlineTimer: a callback was added
+1353 [139989904504704] INFO perfrun.launcher <> - Launcher: resume the profiled application and  wait its termination or stop command
+6431 [139989904504704] INFO perfrun.launcher <> - Launcher: the profiled application was terminated  with exit code = 134
+6436 [139989681702592] INFO perfrun.itt <> - detach itt controller
+6436 [139989681702592] INFO perfrun.itt <> - detach itt controller done
+6436 [139989681702592] INFO perfrun.tpss <> - stop tpss controller
+6437 [139989681702592] INFO perfrun.sdk <> - De-allocating TMU: /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/OpenCAE/r012tr/data.0/systemcollector-2620858-fedora.sc
+6437 [139989681702592] INFO perfrun.system <> - closed the system trace file: /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/OpenCAE/r012tr/data.0/systemcollector-2620858-fedora.sc
+6437 [139989904504704] INFO perfrun.launcher <> - Launcher: all plugins were stopped.
+6437 [139989904504704] INFO perfrun.launcher <> - DeadlineTimer is going to be destroyed
+6437 [139989904504704] INFO perfrun.launcher <> - DeadlineTimer was destroyed
+6437 [139989904504704] INFO perfrun.launcher <> - DirectoryMonitor object was destroyed
+6438 [139989904504704] WARN perfrun.launcher <> - Stop command is ignored because it is received when collection is already stopped, at file: vcs/perfrun1/launcher/src/command_handler.cpp:226
+6438 [139989904504704] INFO perfrun.launcher <> - Application exit code: 134
+6438 [139989904504704] INFO perfrun.launcher <> - Exit code: 4

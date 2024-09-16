@@ -1,0 +1,2 @@
+/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/lib/libOpenCAEPoroX.a
+/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/testOpenCAEPoro

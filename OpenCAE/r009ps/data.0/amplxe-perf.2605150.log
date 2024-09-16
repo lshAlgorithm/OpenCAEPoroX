@@ -1,0 +1,16 @@
+Using CPUID GenuineIntel-6-9A-4
+Control descriptor is not initialized
+Warning:
+UNC_M_CAS_COUNT_RD[UNIT0] event is not supported by the kernel.
+Warning:
+UNC_M_CAS_COUNT_RD[UNIT1] event is not supported by the kernel.
+Warning:
+UNC_M_CAS_COUNT_WR[UNIT0] event is not supported by the kernel.
+Warning:
+UNC_M_CAS_COUNT_WR[UNIT1] event is not supported by the kernel.
+
+2605151:perf-sync:ready:TSC=521069257688645
+failed to read counter UNC_M_CAS_COUNT_RD[UNIT0]
+failed to read counter UNC_M_CAS_COUNT_RD[UNIT1]
+failed to read counter UNC_M_CAS_COUNT_WR[UNIT0]
+failed to read counter UNC_M_CAS_COUNT_WR[UNIT1]
