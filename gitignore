@@ -45,6 +45,7 @@ x86/
 /test
 *.vtk
 *.log
+log/
 # *.sh
 
 
@@ -52,7 +53,7 @@ data/
 
 build/
 
-/aps_result**
+aps_result**
 
 *.html
 # /data/ZBCO2
