@@ -248,6 +248,7 @@ CMakeFiles/OpenCAEPoroX.dir/src/IsothermalSolver.cpp.o: \
   /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/include/DenseMat.hpp \
   /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/numeric \
   /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/stl_numeric.h \
+  /home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include/omp.h \
   /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/include/PardisoSolver.hpp \
   /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/include/SamgSolver.hpp \
   /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/include/FaspSolver.hpp \

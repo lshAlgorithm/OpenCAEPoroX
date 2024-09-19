@@ -15,5 +15,5 @@ export OMP_NUM_THREADS=3    # 指定线程数
 for np    # 指定进程数
 in 4
 do
-	mpirun -n $np aps ./testOpenCAEPoro ./data/case1/case1.data verbose=1
+	mpirun -n $np ./testOpenCAEPoro ./data/test/test.data verbose=1
 done

@@ -19,6 +19,7 @@
 #include <string>
 #include <math.h>
 #include <numeric>
+#include <omp.h>
 #include "OCPDataType.hpp"
 #include "UtilError.hpp"
 
@@ -134,7 +135,9 @@ template <typename T1, typename T2>
 T2 OCP_norm2(const T1& n, const T2* x)
 {
     T2 tmp = 0;
+    #pragma omp parallel for reduction(+:tmp)
     for (T1 i = 0; i < n; i++) {
+        cout << "n == " << n << "Threadnum is: " << omp_get_num_threads() << "\n\n\n";
         tmp += x[i] * x[i];
     }
     return sqrt(tmp);
@@ -275,7 +278,9 @@ bool CheckNan(const int& N, const T* x)
 template <typename T>
 inline void OCPSwap(T a, T b, const int& n, T w)
 {
+    #pragma omp parallel for
     for (int i = 0; i < n; i++) {
+        
         w[i] = a[i];
         a[i] = b[i];
         b[i] = w[i];

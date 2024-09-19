@@ -61,8 +61,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-wG2l5n"
-      binary: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-wG2l5n"
+      source: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-vw9aoC"
+      binary: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-vw9aoC"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g -Rno-debug-disables-optimization"
@@ -71,13 +71,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-wG2l5n'
+        Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-vw9aoC'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_26486/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_26486.dir/build.make CMakeFiles/cmTC_26486.dir/build
-        gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-wG2l5n'
-        Building C object CMakeFiles/cmTC_26486.dir/CMakeCCompilerABI.c.o
-        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx   -v -MD -MT CMakeFiles/cmTC_26486.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_26486.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_26486.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_362fa/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_362fa.dir/build.make CMakeFiles/cmTC_362fa.dir/build
+        gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-vw9aoC'
+        Building C object CMakeFiles/cmTC_362fa.dir/CMakeCCompilerABI.c.o
+        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx   -v -MD -MT CMakeFiles/cmTC_362fa.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_362fa.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_362fa.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
         mpiicx for the Intel(R) MPI Library @IMPI_OFFICIALVERSION@ for Linux*
         Copyright Intel Corporation.
         Intel(R) oneAPI DPC++/C++ Compiler 2024.1.0 (2024.1.0.20240308)
@@ -92,7 +92,7 @@ events:
         Selected multilib: .;@m64
         Found CUDA installation: /usr/local/cuda-12.4, version 
          (in-process)
-         "/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-wG2l5n -v -fcoverage-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-wG2l5n -fclang-abi-compat=17 -resource-dir /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_26486.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_26486.dir/CMakeCCompilerABI.c.o -sys-header-deps -I /home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/src/ksp/pc/impls/hypre/ -I/home/brianlee/Documents/asc/OpenCAEPoro/lapack-3.11/CBLAS/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/petsc_install/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/metis/include -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/include/ -I/home/brianlee/intel/oneapi/tbb/2021.12/env/../include -I/home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/intel/oneapi/mkl/2024.1/include -I/home/brianlee/intel/oneapi/ippcp/2021.11/include -I/home/brianlee/intel/oneapi/ipp/2021.11/include -I/home/brianlee/intel/oneapi/dpl/2022.5/include -I/home/brianlee/intel/oneapi/dpcpp-ct/2024.1/include -I/home/brianlee/intel/oneapi/dnnl/2024.1/include -I/home/brianlee/intel/oneapi/dev-utilities/2024.1/include -I/home/brianlee/intel/oneapi/dal/2024.2/include/dal -I/home/brianlee/intel/oneapi/compiler/2024.1/opt/oclfpga/include -I/home/brianlee/intel/oneapi/ccl/2021.12/include -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -ferror-limit 19 -fheinous-gnu-extensions -fgnuc-version=4.2.1 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o CMakeFiles/cmTC_26486.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+         "/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-vw9aoC -v -fcoverage-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-vw9aoC -fclang-abi-compat=17 -resource-dir /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_362fa.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_362fa.dir/CMakeCCompilerABI.c.o -sys-header-deps -I /home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/src/ksp/pc/impls/hypre/ -I/home/brianlee/Documents/asc/OpenCAEPoro/lapack-3.11/CBLAS/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/petsc_install/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/metis/include -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/include/ -I/home/brianlee/intel/oneapi/tbb/2021.12/env/../include -I/home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/intel/oneapi/mkl/2024.1/include -I/home/brianlee/intel/oneapi/ippcp/2021.11/include -I/home/brianlee/intel/oneapi/ipp/2021.11/include -I/home/brianlee/intel/oneapi/dpl/2022.5/include -I/home/brianlee/intel/oneapi/dpcpp-ct/2024.1/include -I/home/brianlee/intel/oneapi/dnnl/2024.1/include -I/home/brianlee/intel/oneapi/dev-utilities/2024.1/include -I/home/brianlee/intel/oneapi/dal/2024.2/include/dal -I/home/brianlee/intel/oneapi/compiler/2024.1/opt/oclfpga/include -I/home/brianlee/intel/oneapi/ccl/2021.12/include -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -ferror-limit 19 -fheinous-gnu-extensions -fgnuc-version=4.2.1 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o CMakeFiles/cmTC_362fa.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c
         clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-unknown-linux-gnu
         ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include"
         ignoring nonexistent directory "/include"
@@ -122,9 +122,9 @@ events:
          /usr/local/include
          /usr/include
         End of search list.
-        Linking C executable cmTC_26486
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26486.dir/link.txt --verbose=1
-        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx  -v CMakeFiles/cmTC_26486.dir/CMakeCCompilerABI.c.o -o cmTC_26486 
+        Linking C executable cmTC_362fa
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_362fa.dir/link.txt --verbose=1
+        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx  -v CMakeFiles/cmTC_362fa.dir/CMakeCCompilerABI.c.o -o cmTC_362fa 
         mpiicx for the Intel(R) MPI Library @IMPI_OFFICIALVERSION@ for Linux*
         Copyright Intel Corporation.
         Intel(R) oneAPI DPC++/C++ Compiler 2024.1.0 (2024.1.0.20240308)
@@ -138,8 +138,8 @@ events:
         Candidate multilib: 32;@m32
         Selected multilib: .;@m64
         Found CUDA installation: /usr/local/cuda-12.4, version 
-         "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_26486 /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/usr/lib/gcc/x86_64-redhat-linux/14 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../.. -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib -L/home/brianlee/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/home/brianlee/intel/oneapi/mpi/2021.12/lib -L/home/brianlee/intel/oneapi/mkl/2024.1/lib/ -L/home/brianlee/intel/oneapi/ippcp/2021.11/lib/ -L/home/brianlee/intel/oneapi/ipp/2021.11/lib -L/home/brianlee/intel/oneapi/dpl/2022.5/lib -L/home/brianlee/intel/oneapi/dnnl/2024.1/lib -L/home/brianlee/intel/oneapi/dal/2024.2/lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib -L/home/brianlee/intel/oneapi/ccl/2021.12/lib/ CMakeFiles/cmTC_26486.dir/CMakeCCompilerABI.c.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -Bstatic -limf -Bdynamic -lm -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc -Bdynamic -ldl -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc_s -Bdynamic /usr/lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o
-        gmake[1]: Leaving directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-wG2l5n'
+         "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_362fa /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/usr/lib/gcc/x86_64-redhat-linux/14 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../.. -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib -L/home/brianlee/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/home/brianlee/intel/oneapi/mpi/2021.12/lib -L/home/brianlee/intel/oneapi/mkl/2024.1/lib/ -L/home/brianlee/intel/oneapi/ippcp/2021.11/lib/ -L/home/brianlee/intel/oneapi/ipp/2021.11/lib -L/home/brianlee/intel/oneapi/dpl/2022.5/lib -L/home/brianlee/intel/oneapi/dnnl/2024.1/lib -L/home/brianlee/intel/oneapi/dal/2024.2/lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib -L/home/brianlee/intel/oneapi/ccl/2021.12/lib/ CMakeFiles/cmTC_362fa.dir/CMakeCCompilerABI.c.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -Bstatic -limf -Bdynamic -lm -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc -Bdynamic -ldl -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc_s -Bdynamic /usr/lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o
+        gmake[1]: Leaving directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-vw9aoC'
         
       exitCode: 0
   -
@@ -209,13 +209,13 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-wG2l5n']
+        ignore line: [Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-vw9aoC']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_26486/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_26486.dir/build.make CMakeFiles/cmTC_26486.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-wG2l5n']
-        ignore line: [Building C object CMakeFiles/cmTC_26486.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx   -v -MD -MT CMakeFiles/cmTC_26486.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_26486.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_26486.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_362fa/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_362fa.dir/build.make CMakeFiles/cmTC_362fa.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-vw9aoC']
+        ignore line: [Building C object CMakeFiles/cmTC_362fa.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx   -v -MD -MT CMakeFiles/cmTC_362fa.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_362fa.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_362fa.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [mpiicx for the Intel(R) MPI Library @IMPI_OFFICIALVERSION@ for Linux*]
         ignore line: [Copyright Intel Corporation.]
         ignore line: [Intel(R) oneAPI DPC++/C++ Compiler 2024.1.0 (2024.1.0.20240308)]
@@ -233,7 +233,7 @@ events:
         ignore line: [@m64]
         ignore line: [Found CUDA installation: /usr/local/cuda-12.4  version ]
         ignore line: [ (in-process)]
-        ignore line: [ "/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-wG2l5n -v -fcoverage-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-wG2l5n -fclang-abi-compat=17 -resource-dir /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_26486.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_26486.dir/CMakeCCompilerABI.c.o -sys-header-deps -I /home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/src/ksp/pc/impls/hypre/ -I/home/brianlee/Documents/asc/OpenCAEPoro/lapack-3.11/CBLAS/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/petsc_install/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/metis/include -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/include/ -I/home/brianlee/intel/oneapi/tbb/2021.12/env/../include -I/home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/intel/oneapi/mkl/2024.1/include -I/home/brianlee/intel/oneapi/ippcp/2021.11/include -I/home/brianlee/intel/oneapi/ipp/2021.11/include -I/home/brianlee/intel/oneapi/dpl/2022.5/include -I/home/brianlee/intel/oneapi/dpcpp-ct/2024.1/include -I/home/brianlee/intel/oneapi/dnnl/2024.1/include -I/home/brianlee/intel/oneapi/dev-utilities/2024.1/include -I/home/brianlee/intel/oneapi/dal/2024.2/include/dal -I/home/brianlee/intel/oneapi/compiler/2024.1/opt/oclfpga/include -I/home/brianlee/intel/oneapi/ccl/2021.12/include -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -ferror-limit 19 -fheinous-gnu-extensions -fgnuc-version=4.2.1 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o CMakeFiles/cmTC_26486.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [ "/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-vw9aoC -v -fcoverage-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-vw9aoC -fclang-abi-compat=17 -resource-dir /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_362fa.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_362fa.dir/CMakeCCompilerABI.c.o -sys-header-deps -I /home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/src/ksp/pc/impls/hypre/ -I/home/brianlee/Documents/asc/OpenCAEPoro/lapack-3.11/CBLAS/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/petsc_install/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/metis/include -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/include/ -I/home/brianlee/intel/oneapi/tbb/2021.12/env/../include -I/home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/intel/oneapi/mkl/2024.1/include -I/home/brianlee/intel/oneapi/ippcp/2021.11/include -I/home/brianlee/intel/oneapi/ipp/2021.11/include -I/home/brianlee/intel/oneapi/dpl/2022.5/include -I/home/brianlee/intel/oneapi/dpcpp-ct/2024.1/include -I/home/brianlee/intel/oneapi/dnnl/2024.1/include -I/home/brianlee/intel/oneapi/dev-utilities/2024.1/include -I/home/brianlee/intel/oneapi/dal/2024.2/include/dal -I/home/brianlee/intel/oneapi/compiler/2024.1/opt/oclfpga/include -I/home/brianlee/intel/oneapi/ccl/2021.12/include -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -ferror-limit 19 -fheinous-gnu-extensions -fgnuc-version=4.2.1 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o CMakeFiles/cmTC_362fa.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-unknown-linux-gnu]
         ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include"]
         ignore line: [ignoring nonexistent directory "/include"]
@@ -263,9 +263,9 @@ events:
         ignore line: [ /usr/local/include]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [Linking C executable cmTC_26486]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26486.dir/link.txt --verbose=1]
-        ignore line: [/home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx  -v CMakeFiles/cmTC_26486.dir/CMakeCCompilerABI.c.o -o cmTC_26486 ]
+        ignore line: [Linking C executable cmTC_362fa]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_362fa.dir/link.txt --verbose=1]
+        ignore line: [/home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx  -v CMakeFiles/cmTC_362fa.dir/CMakeCCompilerABI.c.o -o cmTC_362fa ]
         ignore line: [mpiicx for the Intel(R) MPI Library @IMPI_OFFICIALVERSION@ for Linux*]
         ignore line: [Copyright Intel Corporation.]
         ignore line: [Intel(R) oneAPI DPC++/C++ Compiler 2024.1.0 (2024.1.0.20240308)]
@@ -282,7 +282,7 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [Found CUDA installation: /usr/local/cuda-12.4  version ]
-        link line: [ "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_26486 /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/usr/lib/gcc/x86_64-redhat-linux/14 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../.. -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib -L/home/brianlee/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/home/brianlee/intel/oneapi/mpi/2021.12/lib -L/home/brianlee/intel/oneapi/mkl/2024.1/lib/ -L/home/brianlee/intel/oneapi/ippcp/2021.11/lib/ -L/home/brianlee/intel/oneapi/ipp/2021.11/lib -L/home/brianlee/intel/oneapi/dpl/2022.5/lib -L/home/brianlee/intel/oneapi/dnnl/2024.1/lib -L/home/brianlee/intel/oneapi/dal/2024.2/lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib -L/home/brianlee/intel/oneapi/ccl/2021.12/lib/ CMakeFiles/cmTC_26486.dir/CMakeCCompilerABI.c.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -Bstatic -limf -Bdynamic -lm -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc -Bdynamic -ldl -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc_s -Bdynamic /usr/lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o]
+        link line: [ "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_362fa /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/usr/lib/gcc/x86_64-redhat-linux/14 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../.. -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib -L/home/brianlee/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/home/brianlee/intel/oneapi/mpi/2021.12/lib -L/home/brianlee/intel/oneapi/mkl/2024.1/lib/ -L/home/brianlee/intel/oneapi/ippcp/2021.11/lib/ -L/home/brianlee/intel/oneapi/ipp/2021.11/lib -L/home/brianlee/intel/oneapi/dpl/2022.5/lib -L/home/brianlee/intel/oneapi/dnnl/2024.1/lib -L/home/brianlee/intel/oneapi/dal/2024.2/lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib -L/home/brianlee/intel/oneapi/ccl/2021.12/lib/ CMakeFiles/cmTC_362fa.dir/CMakeCCompilerABI.c.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -Bstatic -limf -Bdynamic -lm -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc -Bdynamic -ldl -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc_s -Bdynamic /usr/lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o]
           arg [/usr/bin/ld] ==> ignore
           arg [--hash-style=gnu] ==> ignore
           arg [--eh-frame-hdr] ==> ignore
@@ -291,7 +291,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_26486] ==> ignore
+          arg [cmTC_362fa] ==> ignore
           arg [/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o]
@@ -318,7 +318,7 @@ events:
           arg [-L/home/brianlee/intel/oneapi/dal/2024.2/lib] ==> dir [/home/brianlee/intel/oneapi/dal/2024.2/lib]
           arg [-L/home/brianlee/intel/oneapi/compiler/2024.1/lib] ==> dir [/home/brianlee/intel/oneapi/compiler/2024.1/lib]
           arg [-L/home/brianlee/intel/oneapi/ccl/2021.12/lib/] ==> dir [/home/brianlee/intel/oneapi/ccl/2021.12/lib/]
-          arg [CMakeFiles/cmTC_26486.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_362fa.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-Bstatic] ==> search static
           arg [-lsvml] ==> lib [svml]
           arg [-Bdynamic] ==> search dynamic
@@ -392,8 +392,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-s6xjkG"
-      binary: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-s6xjkG"
+      source: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-ZL4glW"
+      binary: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-ZL4glW"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g -Rno-debug-disables-optimization"
@@ -402,13 +402,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-s6xjkG'
+        Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-ZL4glW'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c4b5d/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_c4b5d.dir/build.make CMakeFiles/cmTC_c4b5d.dir/build
-        gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-s6xjkG'
-        Building CXX object CMakeFiles/cmTC_c4b5d.dir/CMakeCXXCompilerABI.cpp.o
-        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicpx   -v -MD -MT CMakeFiles/cmTC_c4b5d.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_c4b5d.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_c4b5d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_17702/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_17702.dir/build.make CMakeFiles/cmTC_17702.dir/build
+        gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-ZL4glW'
+        Building CXX object CMakeFiles/cmTC_17702.dir/CMakeCXXCompilerABI.cpp.o
+        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicpx   -v -MD -MT CMakeFiles/cmTC_17702.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_17702.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_17702.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         mpiicpx for the Intel(R) MPI Library @IMPI_OFFICIALVERSION@ for Linux*
         Copyright Intel Corporation.
         Intel(R) oneAPI DPC++/C++ Compiler 2024.1.0 (2024.1.0.20240308)
@@ -423,7 +423,7 @@ events:
         Selected multilib: .;@m64
         Found CUDA installation: /usr/local/cuda-12.4, version 
          (in-process)
-         "/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-s6xjkG -v -fcoverage-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-s6xjkG -fclang-abi-compat=17 -resource-dir /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_c4b5d.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_c4b5d.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -I /home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/src/ksp/pc/impls/hypre/ -I/home/brianlee/Documents/asc/OpenCAEPoro/lapack-3.11/CBLAS/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/petsc_install/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/metis/include -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/include/ -I/home/brianlee/intel/oneapi/tbb/2021.12/env/../include -I/home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/intel/oneapi/mkl/2024.1/include -I/home/brianlee/intel/oneapi/ippcp/2021.11/include -I/home/brianlee/intel/oneapi/ipp/2021.11/include -I/home/brianlee/intel/oneapi/dpl/2022.5/include -I/home/brianlee/intel/oneapi/dpcpp-ct/2024.1/include -I/home/brianlee/intel/oneapi/dnnl/2024.1/include -I/home/brianlee/intel/oneapi/dev-utilities/2024.1/include -I/home/brianlee/intel/oneapi/dal/2024.2/include/dal -I/home/brianlee/intel/oneapi/compiler/2024.1/opt/oclfpga/include -I/home/brianlee/intel/oneapi/ccl/2021.12/include -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/x86_64-redhat-linux -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/backward -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -fdeprecated-macro -ferror-limit 19 -fheinous-gnu-extensions -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o CMakeFiles/cmTC_c4b5d.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+         "/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-ZL4glW -v -fcoverage-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-ZL4glW -fclang-abi-compat=17 -resource-dir /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_17702.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_17702.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -I /home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/src/ksp/pc/impls/hypre/ -I/home/brianlee/Documents/asc/OpenCAEPoro/lapack-3.11/CBLAS/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/petsc_install/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/metis/include -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/include/ -I/home/brianlee/intel/oneapi/tbb/2021.12/env/../include -I/home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/intel/oneapi/mkl/2024.1/include -I/home/brianlee/intel/oneapi/ippcp/2021.11/include -I/home/brianlee/intel/oneapi/ipp/2021.11/include -I/home/brianlee/intel/oneapi/dpl/2022.5/include -I/home/brianlee/intel/oneapi/dpcpp-ct/2024.1/include -I/home/brianlee/intel/oneapi/dnnl/2024.1/include -I/home/brianlee/intel/oneapi/dev-utilities/2024.1/include -I/home/brianlee/intel/oneapi/dal/2024.2/include/dal -I/home/brianlee/intel/oneapi/compiler/2024.1/opt/oclfpga/include -I/home/brianlee/intel/oneapi/ccl/2021.12/include -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/x86_64-redhat-linux -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/backward -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -fdeprecated-macro -ferror-limit 19 -fheinous-gnu-extensions -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o CMakeFiles/cmTC_17702.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-unknown-linux-gnu
         ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include"
         ignoring nonexistent directory "/include"
@@ -456,9 +456,9 @@ events:
          /usr/local/include
          /usr/include
         End of search list.
-        Linking CXX executable cmTC_c4b5d
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4b5d.dir/link.txt --verbose=1
-        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicpx  -v CMakeFiles/cmTC_c4b5d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c4b5d 
+        Linking CXX executable cmTC_17702
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17702.dir/link.txt --verbose=1
+        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicpx  -v CMakeFiles/cmTC_17702.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_17702 
         mpiicpx for the Intel(R) MPI Library @IMPI_OFFICIALVERSION@ for Linux*
         Copyright Intel Corporation.
         Intel(R) oneAPI DPC++/C++ Compiler 2024.1.0 (2024.1.0.20240308)
@@ -472,8 +472,8 @@ events:
         Candidate multilib: 32;@m32
         Selected multilib: .;@m64
         Found CUDA installation: /usr/local/cuda-12.4, version 
-         "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c4b5d /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/usr/lib/gcc/x86_64-redhat-linux/14 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../.. -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib -L/home/brianlee/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/home/brianlee/intel/oneapi/mpi/2021.12/lib -L/home/brianlee/intel/oneapi/mkl/2024.1/lib/ -L/home/brianlee/intel/oneapi/ippcp/2021.11/lib/ -L/home/brianlee/intel/oneapi/ipp/2021.11/lib -L/home/brianlee/intel/oneapi/dpl/2022.5/lib -L/home/brianlee/intel/oneapi/dnnl/2024.1/lib -L/home/brianlee/intel/oneapi/dal/2024.2/lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib -L/home/brianlee/intel/oneapi/ccl/2021.12/lib/ CMakeFiles/cmTC_c4b5d.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -lstdc++ -Bstatic -limf -Bdynamic -lm -lgcc_s -lgcc -Bstatic -lirc -Bdynamic -ldl -lgcc_s -lgcc -lc -lgcc_s -lgcc -Bstatic -lirc_s -Bdynamic /usr/lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o
-        gmake[1]: Leaving directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-s6xjkG'
+         "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_17702 /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/usr/lib/gcc/x86_64-redhat-linux/14 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../.. -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib -L/home/brianlee/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/home/brianlee/intel/oneapi/mpi/2021.12/lib -L/home/brianlee/intel/oneapi/mkl/2024.1/lib/ -L/home/brianlee/intel/oneapi/ippcp/2021.11/lib/ -L/home/brianlee/intel/oneapi/ipp/2021.11/lib -L/home/brianlee/intel/oneapi/dpl/2022.5/lib -L/home/brianlee/intel/oneapi/dnnl/2024.1/lib -L/home/brianlee/intel/oneapi/dal/2024.2/lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib -L/home/brianlee/intel/oneapi/ccl/2021.12/lib/ CMakeFiles/cmTC_17702.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -lstdc++ -Bstatic -limf -Bdynamic -lm -lgcc_s -lgcc -Bstatic -lirc -Bdynamic -ldl -lgcc_s -lgcc -lc -lgcc_s -lgcc -Bstatic -lirc_s -Bdynamic /usr/lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o
+        gmake[1]: Leaving directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-ZL4glW'
         
       exitCode: 0
   -
@@ -549,13 +549,13 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-s6xjkG']
+        ignore line: [Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-ZL4glW']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c4b5d/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_c4b5d.dir/build.make CMakeFiles/cmTC_c4b5d.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-s6xjkG']
-        ignore line: [Building CXX object CMakeFiles/cmTC_c4b5d.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicpx   -v -MD -MT CMakeFiles/cmTC_c4b5d.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_c4b5d.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_c4b5d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_17702/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_17702.dir/build.make CMakeFiles/cmTC_17702.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-ZL4glW']
+        ignore line: [Building CXX object CMakeFiles/cmTC_17702.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicpx   -v -MD -MT CMakeFiles/cmTC_17702.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_17702.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_17702.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [mpiicpx for the Intel(R) MPI Library @IMPI_OFFICIALVERSION@ for Linux*]
         ignore line: [Copyright Intel Corporation.]
         ignore line: [Intel(R) oneAPI DPC++/C++ Compiler 2024.1.0 (2024.1.0.20240308)]
@@ -573,7 +573,7 @@ events:
         ignore line: [@m64]
         ignore line: [Found CUDA installation: /usr/local/cuda-12.4  version ]
         ignore line: [ (in-process)]
-        ignore line: [ "/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-s6xjkG -v -fcoverage-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-s6xjkG -fclang-abi-compat=17 -resource-dir /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_c4b5d.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_c4b5d.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -I /home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/src/ksp/pc/impls/hypre/ -I/home/brianlee/Documents/asc/OpenCAEPoro/lapack-3.11/CBLAS/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/petsc_install/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/metis/include -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/include/ -I/home/brianlee/intel/oneapi/tbb/2021.12/env/../include -I/home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/intel/oneapi/mkl/2024.1/include -I/home/brianlee/intel/oneapi/ippcp/2021.11/include -I/home/brianlee/intel/oneapi/ipp/2021.11/include -I/home/brianlee/intel/oneapi/dpl/2022.5/include -I/home/brianlee/intel/oneapi/dpcpp-ct/2024.1/include -I/home/brianlee/intel/oneapi/dnnl/2024.1/include -I/home/brianlee/intel/oneapi/dev-utilities/2024.1/include -I/home/brianlee/intel/oneapi/dal/2024.2/include/dal -I/home/brianlee/intel/oneapi/compiler/2024.1/opt/oclfpga/include -I/home/brianlee/intel/oneapi/ccl/2021.12/include -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/x86_64-redhat-linux -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/backward -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -fdeprecated-macro -ferror-limit 19 -fheinous-gnu-extensions -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o CMakeFiles/cmTC_c4b5d.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-ZL4glW -v -fcoverage-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-ZL4glW -fclang-abi-compat=17 -resource-dir /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_17702.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_17702.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -I /home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/src/ksp/pc/impls/hypre/ -I/home/brianlee/Documents/asc/OpenCAEPoro/lapack-3.11/CBLAS/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/petsc_install/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/metis/include -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/include/ -I/home/brianlee/intel/oneapi/tbb/2021.12/env/../include -I/home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/intel/oneapi/mkl/2024.1/include -I/home/brianlee/intel/oneapi/ippcp/2021.11/include -I/home/brianlee/intel/oneapi/ipp/2021.11/include -I/home/brianlee/intel/oneapi/dpl/2022.5/include -I/home/brianlee/intel/oneapi/dpcpp-ct/2024.1/include -I/home/brianlee/intel/oneapi/dnnl/2024.1/include -I/home/brianlee/intel/oneapi/dev-utilities/2024.1/include -I/home/brianlee/intel/oneapi/dal/2024.2/include/dal -I/home/brianlee/intel/oneapi/compiler/2024.1/opt/oclfpga/include -I/home/brianlee/intel/oneapi/ccl/2021.12/include -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/x86_64-redhat-linux -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/backward -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -fdeprecated-macro -ferror-limit 19 -fheinous-gnu-extensions -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o CMakeFiles/cmTC_17702.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-unknown-linux-gnu]
         ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include"]
         ignore line: [ignoring nonexistent directory "/include"]
@@ -606,9 +606,9 @@ events:
         ignore line: [ /usr/local/include]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_c4b5d]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4b5d.dir/link.txt --verbose=1]
-        ignore line: [/home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicpx  -v CMakeFiles/cmTC_c4b5d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c4b5d ]
+        ignore line: [Linking CXX executable cmTC_17702]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17702.dir/link.txt --verbose=1]
+        ignore line: [/home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicpx  -v CMakeFiles/cmTC_17702.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_17702 ]
         ignore line: [mpiicpx for the Intel(R) MPI Library @IMPI_OFFICIALVERSION@ for Linux*]
         ignore line: [Copyright Intel Corporation.]
         ignore line: [Intel(R) oneAPI DPC++/C++ Compiler 2024.1.0 (2024.1.0.20240308)]
@@ -625,7 +625,7 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [Found CUDA installation: /usr/local/cuda-12.4  version ]
-        link line: [ "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c4b5d /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/usr/lib/gcc/x86_64-redhat-linux/14 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../.. -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib -L/home/brianlee/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/home/brianlee/intel/oneapi/mpi/2021.12/lib -L/home/brianlee/intel/oneapi/mkl/2024.1/lib/ -L/home/brianlee/intel/oneapi/ippcp/2021.11/lib/ -L/home/brianlee/intel/oneapi/ipp/2021.11/lib -L/home/brianlee/intel/oneapi/dpl/2022.5/lib -L/home/brianlee/intel/oneapi/dnnl/2024.1/lib -L/home/brianlee/intel/oneapi/dal/2024.2/lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib -L/home/brianlee/intel/oneapi/ccl/2021.12/lib/ CMakeFiles/cmTC_c4b5d.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -lstdc++ -Bstatic -limf -Bdynamic -lm -lgcc_s -lgcc -Bstatic -lirc -Bdynamic -ldl -lgcc_s -lgcc -lc -lgcc_s -lgcc -Bstatic -lirc_s -Bdynamic /usr/lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o]
+        link line: [ "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_17702 /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/usr/lib/gcc/x86_64-redhat-linux/14 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../.. -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib -L/home/brianlee/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/home/brianlee/intel/oneapi/mpi/2021.12/lib -L/home/brianlee/intel/oneapi/mkl/2024.1/lib/ -L/home/brianlee/intel/oneapi/ippcp/2021.11/lib/ -L/home/brianlee/intel/oneapi/ipp/2021.11/lib -L/home/brianlee/intel/oneapi/dpl/2022.5/lib -L/home/brianlee/intel/oneapi/dnnl/2024.1/lib -L/home/brianlee/intel/oneapi/dal/2024.2/lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib -L/home/brianlee/intel/oneapi/ccl/2021.12/lib/ CMakeFiles/cmTC_17702.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -lstdc++ -Bstatic -limf -Bdynamic -lm -lgcc_s -lgcc -Bstatic -lirc -Bdynamic -ldl -lgcc_s -lgcc -lc -lgcc_s -lgcc -Bstatic -lirc_s -Bdynamic /usr/lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o]
           arg [/usr/bin/ld] ==> ignore
           arg [--hash-style=gnu] ==> ignore
           arg [--eh-frame-hdr] ==> ignore
@@ -634,7 +634,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_c4b5d] ==> ignore
+          arg [cmTC_17702] ==> ignore
           arg [/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o]
@@ -661,7 +661,7 @@ events:
           arg [-L/home/brianlee/intel/oneapi/dal/2024.2/lib] ==> dir [/home/brianlee/intel/oneapi/dal/2024.2/lib]
           arg [-L/home/brianlee/intel/oneapi/compiler/2024.1/lib] ==> dir [/home/brianlee/intel/oneapi/compiler/2024.1/lib]
           arg [-L/home/brianlee/intel/oneapi/ccl/2021.12/lib/] ==> dir [/home/brianlee/intel/oneapi/ccl/2021.12/lib/]
-          arg [CMakeFiles/cmTC_c4b5d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_17702.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-Bstatic] ==> search static
           arg [-lsvml] ==> lib [svml]
           arg [-Bdynamic] ==> search dynamic
@@ -732,8 +732,8 @@ events:
     checks:
       - "Looking for sgemm_"
     directories:
-      source: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-w2m6Hx"
-      binary: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-w2m6Hx"
+      source: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-SaDBlY"
+      binary: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-SaDBlY"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g -Rno-debug-disables-optimization"
@@ -743,22 +743,22 @@ events:
       variable: "BLAS_WORKS"
       cached: true
       stdout: |
-        Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-w2m6Hx'
+        Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-SaDBlY'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d26ce/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_d26ce.dir/build.make CMakeFiles/cmTC_d26ce.dir/build
-        gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-w2m6Hx'
-        Building C object CMakeFiles/cmTC_d26ce.dir/CheckFunctionExists.c.o
-        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx   -DCHECK_FUNCTION_EXISTS=sgemm_ -MD -MT CMakeFiles/cmTC_d26ce.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_d26ce.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_d26ce.dir/CheckFunctionExists.c.o -c /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-w2m6Hx/CheckFunctionExists.c
-        Linking C executable cmTC_d26ce
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d26ce.dir/link.txt --verbose=1
-        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_d26ce.dir/CheckFunctionExists.c.o -o cmTC_d26ce 
-        /usr/bin/ld: CMakeFiles/cmTC_d26ce.dir/CheckFunctionExists.c.o: in function `main':
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6ce56/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6ce56.dir/build.make CMakeFiles/cmTC_6ce56.dir/build
+        gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-SaDBlY'
+        Building C object CMakeFiles/cmTC_6ce56.dir/CheckFunctionExists.c.o
+        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx   -DCHECK_FUNCTION_EXISTS=sgemm_ -MD -MT CMakeFiles/cmTC_6ce56.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_6ce56.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_6ce56.dir/CheckFunctionExists.c.o -c /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-SaDBlY/CheckFunctionExists.c
+        Linking C executable cmTC_6ce56
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ce56.dir/link.txt --verbose=1
+        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_6ce56.dir/CheckFunctionExists.c.o -o cmTC_6ce56 
+        /usr/bin/ld: CMakeFiles/cmTC_6ce56.dir/CheckFunctionExists.c.o: in function `main':
         CheckFunctionExists.c:(.text+0x1b): undefined reference to `sgemm_'
         icx: error: linker command failed with exit code 1 (use -v to see invocation)
-        gmake[1]: *** [CMakeFiles/cmTC_d26ce.dir/build.make:100: cmTC_d26ce] Error 1
-        gmake[1]: Leaving directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-w2m6Hx'
-        gmake: *** [Makefile:127: cmTC_d26ce/fast] Error 2
+        gmake[1]: *** [CMakeFiles/cmTC_6ce56.dir/build.make:100: cmTC_6ce56] Error 1
+        gmake[1]: Leaving directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-SaDBlY'
+        gmake: *** [Makefile:127: cmTC_6ce56/fast] Error 2
         
       exitCode: 2
   -
@@ -774,8 +774,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-mzS2jv"
-      binary: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-mzS2jv"
+      source: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-ovCFXz"
+      binary: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-ovCFXz"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g -Rno-debug-disables-optimization"
@@ -785,17 +785,17 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-mzS2jv'
+        Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-ovCFXz'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_347f0/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_347f0.dir/build.make CMakeFiles/cmTC_347f0.dir/build
-        gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-mzS2jv'
-        Building C object CMakeFiles/cmTC_347f0.dir/src.c.o
-        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx -DCMAKE_HAVE_LIBC_PTHREAD   -MD -MT CMakeFiles/cmTC_347f0.dir/src.c.o -MF CMakeFiles/cmTC_347f0.dir/src.c.o.d -o CMakeFiles/cmTC_347f0.dir/src.c.o -c /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-mzS2jv/src.c
-        Linking C executable cmTC_347f0
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_347f0.dir/link.txt --verbose=1
-        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx CMakeFiles/cmTC_347f0.dir/src.c.o -o cmTC_347f0 
-        gmake[1]: Leaving directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-mzS2jv'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9c7ab/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9c7ab.dir/build.make CMakeFiles/cmTC_9c7ab.dir/build
+        gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-ovCFXz'
+        Building C object CMakeFiles/cmTC_9c7ab.dir/src.c.o
+        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx -DCMAKE_HAVE_LIBC_PTHREAD   -MD -MT CMakeFiles/cmTC_9c7ab.dir/src.c.o -MF CMakeFiles/cmTC_9c7ab.dir/src.c.o.d -o CMakeFiles/cmTC_9c7ab.dir/src.c.o -c /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-ovCFXz/src.c
+        Linking C executable cmTC_9c7ab
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c7ab.dir/link.txt --verbose=1
+        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx CMakeFiles/cmTC_9c7ab.dir/src.c.o -o cmTC_9c7ab 
+        gmake[1]: Leaving directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-ovCFXz'
         
       exitCode: 0
   -
@@ -809,8 +809,8 @@ events:
     checks:
       - "Looking for sgemm_"
     directories:
-      source: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-aK0NyD"
-      binary: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-aK0NyD"
+      source: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-i0mlBW"
+      binary: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-i0mlBW"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g -Rno-debug-disables-optimization"
@@ -820,17 +820,17 @@ events:
       variable: "BLAS_mkl_intel_lp64_deps_mkl_intel_thread_deps_mkl_core_deps_iomp5_deps_WORKS"
       cached: true
       stdout: |
-        Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-aK0NyD'
+        Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-i0mlBW'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fc1e6/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_fc1e6.dir/build.make CMakeFiles/cmTC_fc1e6.dir/build
-        gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-aK0NyD'
-        Building C object CMakeFiles/cmTC_fc1e6.dir/CheckFunctionExists.c.o
-        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx   -DCHECK_FUNCTION_EXISTS=sgemm_ -MD -MT CMakeFiles/cmTC_fc1e6.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_fc1e6.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_fc1e6.dir/CheckFunctionExists.c.o -c /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-aK0NyD/CheckFunctionExists.c
-        Linking C executable cmTC_fc1e6
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc1e6.dir/link.txt --verbose=1
-        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_fc1e6.dir/CheckFunctionExists.c.o -o cmTC_fc1e6  /home/brianlee/intel/oneapi/mkl/2024.1/lib/libmkl_intel_lp64.so /home/brianlee/intel/oneapi/mkl/2024.1/lib/libmkl_intel_thread.so /home/brianlee/intel/oneapi/mkl/2024.1/lib/libmkl_core.so /home/brianlee/intel/oneapi/compiler/2024.1/lib/libiomp5.so -lm -ldl 
-        gmake[1]: Leaving directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-aK0NyD'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_16084/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_16084.dir/build.make CMakeFiles/cmTC_16084.dir/build
+        gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-i0mlBW'
+        Building C object CMakeFiles/cmTC_16084.dir/CheckFunctionExists.c.o
+        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx   -DCHECK_FUNCTION_EXISTS=sgemm_ -MD -MT CMakeFiles/cmTC_16084.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_16084.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_16084.dir/CheckFunctionExists.c.o -c /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-i0mlBW/CheckFunctionExists.c
+        Linking C executable cmTC_16084
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16084.dir/link.txt --verbose=1
+        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_16084.dir/CheckFunctionExists.c.o -o cmTC_16084  /home/brianlee/intel/oneapi/mkl/2024.1/lib/libmkl_intel_lp64.so /home/brianlee/intel/oneapi/mkl/2024.1/lib/libmkl_intel_thread.so /home/brianlee/intel/oneapi/mkl/2024.1/lib/libmkl_core.so /home/brianlee/intel/oneapi/compiler/2024.1/lib/libiomp5.so -lm -ldl 
+        gmake[1]: Leaving directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-i0mlBW'
         
       exitCode: 0
   -
@@ -844,8 +844,8 @@ events:
     checks:
       - "Looking for cheev_"
     directories:
-      source: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-HFthum"
-      binary: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-HFthum"
+      source: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-CaTcxb"
+      binary: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-CaTcxb"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g -Rno-debug-disables-optimization"
@@ -855,17 +855,17 @@ events:
       variable: "LAPACK_WORKS"
       cached: true
       stdout: |
-        Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-HFthum'
+        Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-CaTcxb'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ccf7a/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_ccf7a.dir/build.make CMakeFiles/cmTC_ccf7a.dir/build
-        gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-HFthum'
-        Building C object CMakeFiles/cmTC_ccf7a.dir/CheckFunctionExists.c.o
-        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx   -DCHECK_FUNCTION_EXISTS=cheev_ -MD -MT CMakeFiles/cmTC_ccf7a.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_ccf7a.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_ccf7a.dir/CheckFunctionExists.c.o -c /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-HFthum/CheckFunctionExists.c
-        Linking C executable cmTC_ccf7a
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ccf7a.dir/link.txt --verbose=1
-        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_ccf7a.dir/CheckFunctionExists.c.o -o cmTC_ccf7a  /home/brianlee/intel/oneapi/mkl/2024.1/lib/libmkl_intel_lp64.so /home/brianlee/intel/oneapi/mkl/2024.1/lib/libmkl_intel_thread.so /home/brianlee/intel/oneapi/mkl/2024.1/lib/libmkl_core.so /home/brianlee/intel/oneapi/compiler/2024.1/lib/libiomp5.so -lm -ldl -lm -ldl 
-        gmake[1]: Leaving directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-HFthum'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a3521/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a3521.dir/build.make CMakeFiles/cmTC_a3521.dir/build
+        gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-CaTcxb'
+        Building C object CMakeFiles/cmTC_a3521.dir/CheckFunctionExists.c.o
+        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx   -DCHECK_FUNCTION_EXISTS=cheev_ -MD -MT CMakeFiles/cmTC_a3521.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_a3521.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_a3521.dir/CheckFunctionExists.c.o -c /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-CaTcxb/CheckFunctionExists.c
+        Linking C executable cmTC_a3521
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a3521.dir/link.txt --verbose=1
+        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_a3521.dir/CheckFunctionExists.c.o -o cmTC_a3521  /home/brianlee/intel/oneapi/mkl/2024.1/lib/libmkl_intel_lp64.so /home/brianlee/intel/oneapi/mkl/2024.1/lib/libmkl_intel_thread.so /home/brianlee/intel/oneapi/mkl/2024.1/lib/libmkl_core.so /home/brianlee/intel/oneapi/compiler/2024.1/lib/libiomp5.so -lm -ldl -lm -ldl 
+        gmake[1]: Leaving directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-CaTcxb'
         
       exitCode: 0
   -
@@ -877,8 +877,8 @@ events:
       - "external/CMakeLists.txt:18 (include)"
     description: "Detecting C OpenMP compiler info"
     directories:
-      source: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-zjXB35"
-      binary: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-zjXB35"
+      source: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-RljiJ3"
+      binary: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-RljiJ3"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g -Rno-debug-disables-optimization"
@@ -888,13 +888,13 @@ events:
       variable: "OpenMP_COMPILE_RESULT_C_fiopenmp"
       cached: true
       stdout: |
-        Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-zjXB35'
+        Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-RljiJ3'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_442f1/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_442f1.dir/build.make CMakeFiles/cmTC_442f1.dir/build
-        gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-zjXB35'
-        Building C object CMakeFiles/cmTC_442f1.dir/OpenMPTryFlag.c.o
-        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx   -fiopenmp -v -MD -MT CMakeFiles/cmTC_442f1.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_442f1.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_442f1.dir/OpenMPTryFlag.c.o -c /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-zjXB35/OpenMPTryFlag.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5546c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5546c.dir/build.make CMakeFiles/cmTC_5546c.dir/build
+        gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-RljiJ3'
+        Building C object CMakeFiles/cmTC_5546c.dir/OpenMPTryFlag.c.o
+        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx   -fiopenmp -v -MD -MT CMakeFiles/cmTC_5546c.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_5546c.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_5546c.dir/OpenMPTryFlag.c.o -c /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-RljiJ3/OpenMPTryFlag.c
         mpiicx for the Intel(R) MPI Library @IMPI_OFFICIALVERSION@ for Linux*
         Copyright Intel Corporation.
         Intel(R) oneAPI DPC++/C++ Compiler 2024.1.0 (2024.1.0.20240308)
@@ -909,7 +909,7 @@ events:
         Selected multilib: .;@m64
         Found CUDA installation: /usr/local/cuda-12.4, version 
          (in-process)
-         "/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-zjXB35 -v -fcoverage-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-zjXB35 -fclang-abi-compat=17 -resource-dir /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_442f1.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_442f1.dir/OpenMPTryFlag.c.o -sys-header-deps -I /home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/src/ksp/pc/impls/hypre/ -I/home/brianlee/Documents/asc/OpenCAEPoro/lapack-3.11/CBLAS/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/petsc_install/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/metis/include -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/include/ -I/home/brianlee/intel/oneapi/tbb/2021.12/env/../include -I/home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/intel/oneapi/mkl/2024.1/include -I/home/brianlee/intel/oneapi/ippcp/2021.11/include -I/home/brianlee/intel/oneapi/ipp/2021.11/include -I/home/brianlee/intel/oneapi/dpl/2022.5/include -I/home/brianlee/intel/oneapi/dpcpp-ct/2024.1/include -I/home/brianlee/intel/oneapi/dnnl/2024.1/include -I/home/brianlee/intel/oneapi/dev-utilities/2024.1/include -I/home/brianlee/intel/oneapi/dal/2024.2/include/dal -I/home/brianlee/intel/oneapi/compiler/2024.1/opt/oclfpga/include -I/home/brianlee/intel/oneapi/ccl/2021.12/include -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -ferror-limit 19 -fheinous-gnu-extensions -fopenmp-late-outline -fopenmp-threadprivate-legacy -fopenmp -fgnuc-version=4.2.1 -vectorize-loops -vectorize-slp -mllvm -paropt=31 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o CMakeFiles/cmTC_442f1.dir/OpenMPTryFlag.c.o -x c /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-zjXB35/OpenMPTryFlag.c
+         "/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-RljiJ3 -v -fcoverage-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-RljiJ3 -fclang-abi-compat=17 -resource-dir /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_5546c.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_5546c.dir/OpenMPTryFlag.c.o -sys-header-deps -I /home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/src/ksp/pc/impls/hypre/ -I/home/brianlee/Documents/asc/OpenCAEPoro/lapack-3.11/CBLAS/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/petsc_install/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/metis/include -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/include/ -I/home/brianlee/intel/oneapi/tbb/2021.12/env/../include -I/home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/intel/oneapi/mkl/2024.1/include -I/home/brianlee/intel/oneapi/ippcp/2021.11/include -I/home/brianlee/intel/oneapi/ipp/2021.11/include -I/home/brianlee/intel/oneapi/dpl/2022.5/include -I/home/brianlee/intel/oneapi/dpcpp-ct/2024.1/include -I/home/brianlee/intel/oneapi/dnnl/2024.1/include -I/home/brianlee/intel/oneapi/dev-utilities/2024.1/include -I/home/brianlee/intel/oneapi/dal/2024.2/include/dal -I/home/brianlee/intel/oneapi/compiler/2024.1/opt/oclfpga/include -I/home/brianlee/intel/oneapi/ccl/2021.12/include -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -ferror-limit 19 -fheinous-gnu-extensions -fopenmp-late-outline -fopenmp-threadprivate-legacy -fopenmp -fgnuc-version=4.2.1 -vectorize-loops -vectorize-slp -mllvm -paropt=31 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o CMakeFiles/cmTC_5546c.dir/OpenMPTryFlag.c.o -x c /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-RljiJ3/OpenMPTryFlag.c
         clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-unknown-linux-gnu
         ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include"
         ignoring nonexistent directory "/include"
@@ -939,9 +939,9 @@ events:
          /usr/local/include
          /usr/include
         End of search list.
-        Linking C executable cmTC_442f1
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_442f1.dir/link.txt --verbose=1
-        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx  -fiopenmp -v CMakeFiles/cmTC_442f1.dir/OpenMPTryFlag.c.o -o cmTC_442f1  -v 
+        Linking C executable cmTC_5546c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5546c.dir/link.txt --verbose=1
+        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx  -fiopenmp -v CMakeFiles/cmTC_5546c.dir/OpenMPTryFlag.c.o -o cmTC_5546c  -v 
         mpiicx for the Intel(R) MPI Library @IMPI_OFFICIALVERSION@ for Linux*
         Copyright Intel Corporation.
         mpiicx for the Intel(R) MPI Library @IMPI_OFFICIALVERSION@ for Linux*
@@ -957,8 +957,8 @@ events:
         Candidate multilib: 32;@m32
         Selected multilib: .;@m64
         Found CUDA installation: /usr/local/cuda-12.4, version 
-         "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_442f1 /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/usr/lib/gcc/x86_64-redhat-linux/14 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../.. -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib -L/home/brianlee/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/home/brianlee/intel/oneapi/mpi/2021.12/lib -L/home/brianlee/intel/oneapi/mkl/2024.1/lib/ -L/home/brianlee/intel/oneapi/ippcp/2021.11/lib/ -L/home/brianlee/intel/oneapi/ipp/2021.11/lib -L/home/brianlee/intel/oneapi/dpl/2022.5/lib -L/home/brianlee/intel/oneapi/dnnl/2024.1/lib -L/home/brianlee/intel/oneapi/dal/2024.2/lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib -L/home/brianlee/intel/oneapi/ccl/2021.12/lib/ CMakeFiles/cmTC_442f1.dir/OpenMPTryFlag.c.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -Bstatic -limf -Bdynamic -lm -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc -Bdynamic -ldl -liomp5 -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/lib -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc_s -Bdynamic /usr/lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o
-        gmake[1]: Leaving directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-zjXB35'
+         "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_5546c /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/usr/lib/gcc/x86_64-redhat-linux/14 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../.. -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib -L/home/brianlee/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/home/brianlee/intel/oneapi/mpi/2021.12/lib -L/home/brianlee/intel/oneapi/mkl/2024.1/lib/ -L/home/brianlee/intel/oneapi/ippcp/2021.11/lib/ -L/home/brianlee/intel/oneapi/ipp/2021.11/lib -L/home/brianlee/intel/oneapi/dpl/2022.5/lib -L/home/brianlee/intel/oneapi/dnnl/2024.1/lib -L/home/brianlee/intel/oneapi/dal/2024.2/lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib -L/home/brianlee/intel/oneapi/ccl/2021.12/lib/ CMakeFiles/cmTC_5546c.dir/OpenMPTryFlag.c.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -Bstatic -limf -Bdynamic -lm -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc -Bdynamic -ldl -liomp5 -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/lib -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc_s -Bdynamic /usr/lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o
+        gmake[1]: Leaving directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-RljiJ3'
         
       exitCode: 0
   -
@@ -971,13 +971,13 @@ events:
     message: |
       Parsed C OpenMP implicit link information from above output:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-zjXB35']
+        ignore line: [Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-RljiJ3']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_442f1/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_442f1.dir/build.make CMakeFiles/cmTC_442f1.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-zjXB35']
-        ignore line: [Building C object CMakeFiles/cmTC_442f1.dir/OpenMPTryFlag.c.o]
-        ignore line: [/home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx   -fiopenmp -v -MD -MT CMakeFiles/cmTC_442f1.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_442f1.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_442f1.dir/OpenMPTryFlag.c.o -c /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-zjXB35/OpenMPTryFlag.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5546c/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_5546c.dir/build.make CMakeFiles/cmTC_5546c.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-RljiJ3']
+        ignore line: [Building C object CMakeFiles/cmTC_5546c.dir/OpenMPTryFlag.c.o]
+        ignore line: [/home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx   -fiopenmp -v -MD -MT CMakeFiles/cmTC_5546c.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_5546c.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_5546c.dir/OpenMPTryFlag.c.o -c /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-RljiJ3/OpenMPTryFlag.c]
         ignore line: [mpiicx for the Intel(R) MPI Library @IMPI_OFFICIALVERSION@ for Linux*]
         ignore line: [Copyright Intel Corporation.]
         ignore line: [Intel(R) oneAPI DPC++/C++ Compiler 2024.1.0 (2024.1.0.20240308)]
@@ -995,7 +995,7 @@ events:
         ignore line: [@m64]
         ignore line: [Found CUDA installation: /usr/local/cuda-12.4  version ]
         ignore line: [ (in-process)]
-        ignore line: [ "/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-zjXB35 -v -fcoverage-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-zjXB35 -fclang-abi-compat=17 -resource-dir /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_442f1.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_442f1.dir/OpenMPTryFlag.c.o -sys-header-deps -I /home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/src/ksp/pc/impls/hypre/ -I/home/brianlee/Documents/asc/OpenCAEPoro/lapack-3.11/CBLAS/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/petsc_install/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/metis/include -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/include/ -I/home/brianlee/intel/oneapi/tbb/2021.12/env/../include -I/home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/intel/oneapi/mkl/2024.1/include -I/home/brianlee/intel/oneapi/ippcp/2021.11/include -I/home/brianlee/intel/oneapi/ipp/2021.11/include -I/home/brianlee/intel/oneapi/dpl/2022.5/include -I/home/brianlee/intel/oneapi/dpcpp-ct/2024.1/include -I/home/brianlee/intel/oneapi/dnnl/2024.1/include -I/home/brianlee/intel/oneapi/dev-utilities/2024.1/include -I/home/brianlee/intel/oneapi/dal/2024.2/include/dal -I/home/brianlee/intel/oneapi/compiler/2024.1/opt/oclfpga/include -I/home/brianlee/intel/oneapi/ccl/2021.12/include -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -ferror-limit 19 -fheinous-gnu-extensions -fopenmp-late-outline -fopenmp-threadprivate-legacy -fopenmp -fgnuc-version=4.2.1 -vectorize-loops -vectorize-slp -mllvm -paropt=31 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o CMakeFiles/cmTC_442f1.dir/OpenMPTryFlag.c.o -x c /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-zjXB35/OpenMPTryFlag.c]
+        ignore line: [ "/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-RljiJ3 -v -fcoverage-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-RljiJ3 -fclang-abi-compat=17 -resource-dir /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_5546c.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_5546c.dir/OpenMPTryFlag.c.o -sys-header-deps -I /home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/src/ksp/pc/impls/hypre/ -I/home/brianlee/Documents/asc/OpenCAEPoro/lapack-3.11/CBLAS/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/petsc_install/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/metis/include -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/include/ -I/home/brianlee/intel/oneapi/tbb/2021.12/env/../include -I/home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/intel/oneapi/mkl/2024.1/include -I/home/brianlee/intel/oneapi/ippcp/2021.11/include -I/home/brianlee/intel/oneapi/ipp/2021.11/include -I/home/brianlee/intel/oneapi/dpl/2022.5/include -I/home/brianlee/intel/oneapi/dpcpp-ct/2024.1/include -I/home/brianlee/intel/oneapi/dnnl/2024.1/include -I/home/brianlee/intel/oneapi/dev-utilities/2024.1/include -I/home/brianlee/intel/oneapi/dal/2024.2/include/dal -I/home/brianlee/intel/oneapi/compiler/2024.1/opt/oclfpga/include -I/home/brianlee/intel/oneapi/ccl/2021.12/include -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -ferror-limit 19 -fheinous-gnu-extensions -fopenmp-late-outline -fopenmp-threadprivate-legacy -fopenmp -fgnuc-version=4.2.1 -vectorize-loops -vectorize-slp -mllvm -paropt=31 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o CMakeFiles/cmTC_5546c.dir/OpenMPTryFlag.c.o -x c /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-RljiJ3/OpenMPTryFlag.c]
         ignore line: [clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-unknown-linux-gnu]
         ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include"]
         ignore line: [ignoring nonexistent directory "/include"]
@@ -1025,9 +1025,9 @@ events:
         ignore line: [ /usr/local/include]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [Linking C executable cmTC_442f1]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_442f1.dir/link.txt --verbose=1]
-        ignore line: [/home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx  -fiopenmp -v CMakeFiles/cmTC_442f1.dir/OpenMPTryFlag.c.o -o cmTC_442f1  -v ]
+        ignore line: [Linking C executable cmTC_5546c]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5546c.dir/link.txt --verbose=1]
+        ignore line: [/home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx  -fiopenmp -v CMakeFiles/cmTC_5546c.dir/OpenMPTryFlag.c.o -o cmTC_5546c  -v ]
         ignore line: [mpiicx for the Intel(R) MPI Library @IMPI_OFFICIALVERSION@ for Linux*]
         ignore line: [Copyright Intel Corporation.]
         ignore line: [mpiicx for the Intel(R) MPI Library @IMPI_OFFICIALVERSION@ for Linux*]
@@ -1046,7 +1046,7 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [Found CUDA installation: /usr/local/cuda-12.4  version ]
-        link line: [ "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_442f1 /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/usr/lib/gcc/x86_64-redhat-linux/14 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../.. -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib -L/home/brianlee/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/home/brianlee/intel/oneapi/mpi/2021.12/lib -L/home/brianlee/intel/oneapi/mkl/2024.1/lib/ -L/home/brianlee/intel/oneapi/ippcp/2021.11/lib/ -L/home/brianlee/intel/oneapi/ipp/2021.11/lib -L/home/brianlee/intel/oneapi/dpl/2022.5/lib -L/home/brianlee/intel/oneapi/dnnl/2024.1/lib -L/home/brianlee/intel/oneapi/dal/2024.2/lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib -L/home/brianlee/intel/oneapi/ccl/2021.12/lib/ CMakeFiles/cmTC_442f1.dir/OpenMPTryFlag.c.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -Bstatic -limf -Bdynamic -lm -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc -Bdynamic -ldl -liomp5 -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/lib -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc_s -Bdynamic /usr/lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o]
+        link line: [ "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_5546c /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/usr/lib/gcc/x86_64-redhat-linux/14 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../.. -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib -L/home/brianlee/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/home/brianlee/intel/oneapi/mpi/2021.12/lib -L/home/brianlee/intel/oneapi/mkl/2024.1/lib/ -L/home/brianlee/intel/oneapi/ippcp/2021.11/lib/ -L/home/brianlee/intel/oneapi/ipp/2021.11/lib -L/home/brianlee/intel/oneapi/dpl/2022.5/lib -L/home/brianlee/intel/oneapi/dnnl/2024.1/lib -L/home/brianlee/intel/oneapi/dal/2024.2/lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib -L/home/brianlee/intel/oneapi/ccl/2021.12/lib/ CMakeFiles/cmTC_5546c.dir/OpenMPTryFlag.c.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -Bstatic -limf -Bdynamic -lm -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc -Bdynamic -ldl -liomp5 -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/lib -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc_s -Bdynamic /usr/lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o]
           arg [/usr/bin/ld] ==> ignore
           arg [--hash-style=gnu] ==> ignore
           arg [--eh-frame-hdr] ==> ignore
@@ -1055,7 +1055,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_442f1] ==> ignore
+          arg [cmTC_5546c] ==> ignore
           arg [-L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib] ==> dir [/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib]
           arg [-L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib] ==> dir [/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib]
           arg [-L/home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu] ==> dir [/home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu]
@@ -1079,7 +1079,7 @@ events:
           arg [-L/home/brianlee/intel/oneapi/dal/2024.2/lib] ==> dir [/home/brianlee/intel/oneapi/dal/2024.2/lib]
           arg [-L/home/brianlee/intel/oneapi/compiler/2024.1/lib] ==> dir [/home/brianlee/intel/oneapi/compiler/2024.1/lib]
           arg [-L/home/brianlee/intel/oneapi/ccl/2021.12/lib/] ==> dir [/home/brianlee/intel/oneapi/ccl/2021.12/lib/]
-          arg [CMakeFiles/cmTC_442f1.dir/OpenMPTryFlag.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_5546c.dir/OpenMPTryFlag.c.o] ==> ignore
           arg [-Bstatic] ==> search static
           arg [-lsvml] ==> lib [svml]
           arg [-Bdynamic] ==> search dynamic
@@ -1152,8 +1152,8 @@ events:
       - "external/CMakeLists.txt:18 (include)"
     description: "Detecting CXX OpenMP compiler info"
     directories:
-      source: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-yYToZD"
-      binary: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-yYToZD"
+      source: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-owGcVm"
+      binary: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-owGcVm"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g -Rno-debug-disables-optimization"
@@ -1163,13 +1163,13 @@ events:
       variable: "OpenMP_COMPILE_RESULT_CXX_fiopenmp"
       cached: true
       stdout: |
-        Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-yYToZD'
+        Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-owGcVm'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_85604/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_85604.dir/build.make CMakeFiles/cmTC_85604.dir/build
-        gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-yYToZD'
-        Building CXX object CMakeFiles/cmTC_85604.dir/OpenMPTryFlag.cpp.o
-        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicpx   -fiopenmp -v -std=gnu++14 -MD -MT CMakeFiles/cmTC_85604.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_85604.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_85604.dir/OpenMPTryFlag.cpp.o -c /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-yYToZD/OpenMPTryFlag.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d2607/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d2607.dir/build.make CMakeFiles/cmTC_d2607.dir/build
+        gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-owGcVm'
+        Building CXX object CMakeFiles/cmTC_d2607.dir/OpenMPTryFlag.cpp.o
+        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicpx   -fiopenmp -v -std=gnu++14 -MD -MT CMakeFiles/cmTC_d2607.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_d2607.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_d2607.dir/OpenMPTryFlag.cpp.o -c /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-owGcVm/OpenMPTryFlag.cpp
         mpiicpx for the Intel(R) MPI Library @IMPI_OFFICIALVERSION@ for Linux*
         Copyright Intel Corporation.
         Intel(R) oneAPI DPC++/C++ Compiler 2024.1.0 (2024.1.0.20240308)
@@ -1184,7 +1184,7 @@ events:
         Selected multilib: .;@m64
         Found CUDA installation: /usr/local/cuda-12.4, version 
          (in-process)
-         "/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-yYToZD -v -fcoverage-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-yYToZD -fclang-abi-compat=17 -resource-dir /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_85604.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_85604.dir/OpenMPTryFlag.cpp.o -sys-header-deps -I /home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/src/ksp/pc/impls/hypre/ -I/home/brianlee/Documents/asc/OpenCAEPoro/lapack-3.11/CBLAS/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/petsc_install/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/metis/include -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/include/ -I/home/brianlee/intel/oneapi/tbb/2021.12/env/../include -I/home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/intel/oneapi/mkl/2024.1/include -I/home/brianlee/intel/oneapi/ippcp/2021.11/include -I/home/brianlee/intel/oneapi/ipp/2021.11/include -I/home/brianlee/intel/oneapi/dpl/2022.5/include -I/home/brianlee/intel/oneapi/dpcpp-ct/2024.1/include -I/home/brianlee/intel/oneapi/dnnl/2024.1/include -I/home/brianlee/intel/oneapi/dev-utilities/2024.1/include -I/home/brianlee/intel/oneapi/dal/2024.2/include/dal -I/home/brianlee/intel/oneapi/compiler/2024.1/opt/oclfpga/include -I/home/brianlee/intel/oneapi/ccl/2021.12/include -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/x86_64-redhat-linux -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/backward -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -std=gnu++14 -fdeprecated-macro -ferror-limit 19 -fheinous-gnu-extensions -fopenmp-late-outline -fopenmp-threadprivate-legacy -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -mllvm -paropt=31 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o CMakeFiles/cmTC_85604.dir/OpenMPTryFlag.cpp.o -x c++ /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-yYToZD/OpenMPTryFlag.cpp
+         "/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-owGcVm -v -fcoverage-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-owGcVm -fclang-abi-compat=17 -resource-dir /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_d2607.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_d2607.dir/OpenMPTryFlag.cpp.o -sys-header-deps -I /home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/src/ksp/pc/impls/hypre/ -I/home/brianlee/Documents/asc/OpenCAEPoro/lapack-3.11/CBLAS/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/petsc_install/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/metis/include -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/include/ -I/home/brianlee/intel/oneapi/tbb/2021.12/env/../include -I/home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/intel/oneapi/mkl/2024.1/include -I/home/brianlee/intel/oneapi/ippcp/2021.11/include -I/home/brianlee/intel/oneapi/ipp/2021.11/include -I/home/brianlee/intel/oneapi/dpl/2022.5/include -I/home/brianlee/intel/oneapi/dpcpp-ct/2024.1/include -I/home/brianlee/intel/oneapi/dnnl/2024.1/include -I/home/brianlee/intel/oneapi/dev-utilities/2024.1/include -I/home/brianlee/intel/oneapi/dal/2024.2/include/dal -I/home/brianlee/intel/oneapi/compiler/2024.1/opt/oclfpga/include -I/home/brianlee/intel/oneapi/ccl/2021.12/include -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/x86_64-redhat-linux -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/backward -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -std=gnu++14 -fdeprecated-macro -ferror-limit 19 -fheinous-gnu-extensions -fopenmp-late-outline -fopenmp-threadprivate-legacy -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -mllvm -paropt=31 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o CMakeFiles/cmTC_d2607.dir/OpenMPTryFlag.cpp.o -x c++ /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-owGcVm/OpenMPTryFlag.cpp
         clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-unknown-linux-gnu
         ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include"
         ignoring nonexistent directory "/include"
@@ -1217,9 +1217,9 @@ events:
          /usr/local/include
          /usr/include
         End of search list.
-        Linking CXX executable cmTC_85604
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_85604.dir/link.txt --verbose=1
-        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicpx  -fiopenmp -v CMakeFiles/cmTC_85604.dir/OpenMPTryFlag.cpp.o -o cmTC_85604  -v 
+        Linking CXX executable cmTC_d2607
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2607.dir/link.txt --verbose=1
+        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicpx  -fiopenmp -v CMakeFiles/cmTC_d2607.dir/OpenMPTryFlag.cpp.o -o cmTC_d2607  -v 
         mpiicpx for the Intel(R) MPI Library @IMPI_OFFICIALVERSION@ for Linux*
         Copyright Intel Corporation.
         mpiicpx for the Intel(R) MPI Library @IMPI_OFFICIALVERSION@ for Linux*
@@ -1235,8 +1235,8 @@ events:
         Candidate multilib: 32;@m32
         Selected multilib: .;@m64
         Found CUDA installation: /usr/local/cuda-12.4, version 
-         "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_85604 /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/usr/lib/gcc/x86_64-redhat-linux/14 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../.. -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib -L/home/brianlee/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/home/brianlee/intel/oneapi/mpi/2021.12/lib -L/home/brianlee/intel/oneapi/mkl/2024.1/lib/ -L/home/brianlee/intel/oneapi/ippcp/2021.11/lib/ -L/home/brianlee/intel/oneapi/ipp/2021.11/lib -L/home/brianlee/intel/oneapi/dpl/2022.5/lib -L/home/brianlee/intel/oneapi/dnnl/2024.1/lib -L/home/brianlee/intel/oneapi/dal/2024.2/lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib -L/home/brianlee/intel/oneapi/ccl/2021.12/lib/ CMakeFiles/cmTC_85604.dir/OpenMPTryFlag.cpp.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -lstdc++ -Bstatic -limf -Bdynamic -lm -lgcc_s -lgcc -Bstatic -lirc -Bdynamic -ldl -liomp5 -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/lib -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc -Bstatic -lirc_s -Bdynamic /usr/lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o
-        gmake[1]: Leaving directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-yYToZD'
+         "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_d2607 /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/usr/lib/gcc/x86_64-redhat-linux/14 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../.. -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib -L/home/brianlee/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/home/brianlee/intel/oneapi/mpi/2021.12/lib -L/home/brianlee/intel/oneapi/mkl/2024.1/lib/ -L/home/brianlee/intel/oneapi/ippcp/2021.11/lib/ -L/home/brianlee/intel/oneapi/ipp/2021.11/lib -L/home/brianlee/intel/oneapi/dpl/2022.5/lib -L/home/brianlee/intel/oneapi/dnnl/2024.1/lib -L/home/brianlee/intel/oneapi/dal/2024.2/lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib -L/home/brianlee/intel/oneapi/ccl/2021.12/lib/ CMakeFiles/cmTC_d2607.dir/OpenMPTryFlag.cpp.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -lstdc++ -Bstatic -limf -Bdynamic -lm -lgcc_s -lgcc -Bstatic -lirc -Bdynamic -ldl -liomp5 -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/lib -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc -Bstatic -lirc_s -Bdynamic /usr/lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o
+        gmake[1]: Leaving directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-owGcVm'
         
       exitCode: 0
   -
@@ -1249,13 +1249,13 @@ events:
     message: |
       Parsed CXX OpenMP implicit link information from above output:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-yYToZD']
+        ignore line: [Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-owGcVm']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_85604/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_85604.dir/build.make CMakeFiles/cmTC_85604.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-yYToZD']
-        ignore line: [Building CXX object CMakeFiles/cmTC_85604.dir/OpenMPTryFlag.cpp.o]
-        ignore line: [/home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicpx   -fiopenmp -v -std=gnu++14 -MD -MT CMakeFiles/cmTC_85604.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_85604.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_85604.dir/OpenMPTryFlag.cpp.o -c /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-yYToZD/OpenMPTryFlag.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d2607/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_d2607.dir/build.make CMakeFiles/cmTC_d2607.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-owGcVm']
+        ignore line: [Building CXX object CMakeFiles/cmTC_d2607.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicpx   -fiopenmp -v -std=gnu++14 -MD -MT CMakeFiles/cmTC_d2607.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_d2607.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_d2607.dir/OpenMPTryFlag.cpp.o -c /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-owGcVm/OpenMPTryFlag.cpp]
         ignore line: [mpiicpx for the Intel(R) MPI Library @IMPI_OFFICIALVERSION@ for Linux*]
         ignore line: [Copyright Intel Corporation.]
         ignore line: [Intel(R) oneAPI DPC++/C++ Compiler 2024.1.0 (2024.1.0.20240308)]
@@ -1273,7 +1273,7 @@ events:
         ignore line: [@m64]
         ignore line: [Found CUDA installation: /usr/local/cuda-12.4  version ]
         ignore line: [ (in-process)]
-        ignore line: [ "/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-yYToZD -v -fcoverage-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-yYToZD -fclang-abi-compat=17 -resource-dir /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_85604.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_85604.dir/OpenMPTryFlag.cpp.o -sys-header-deps -I /home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/src/ksp/pc/impls/hypre/ -I/home/brianlee/Documents/asc/OpenCAEPoro/lapack-3.11/CBLAS/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/petsc_install/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/metis/include -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/include/ -I/home/brianlee/intel/oneapi/tbb/2021.12/env/../include -I/home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/intel/oneapi/mkl/2024.1/include -I/home/brianlee/intel/oneapi/ippcp/2021.11/include -I/home/brianlee/intel/oneapi/ipp/2021.11/include -I/home/brianlee/intel/oneapi/dpl/2022.5/include -I/home/brianlee/intel/oneapi/dpcpp-ct/2024.1/include -I/home/brianlee/intel/oneapi/dnnl/2024.1/include -I/home/brianlee/intel/oneapi/dev-utilities/2024.1/include -I/home/brianlee/intel/oneapi/dal/2024.2/include/dal -I/home/brianlee/intel/oneapi/compiler/2024.1/opt/oclfpga/include -I/home/brianlee/intel/oneapi/ccl/2021.12/include -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/x86_64-redhat-linux -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/backward -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -std=gnu++14 -fdeprecated-macro -ferror-limit 19 -fheinous-gnu-extensions -fopenmp-late-outline -fopenmp-threadprivate-legacy -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -mllvm -paropt=31 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o CMakeFiles/cmTC_85604.dir/OpenMPTryFlag.cpp.o -x c++ /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-yYToZD/OpenMPTryFlag.cpp]
+        ignore line: [ "/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-owGcVm -v -fcoverage-compilation-dir=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-owGcVm -fclang-abi-compat=17 -resource-dir /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_d2607.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_d2607.dir/OpenMPTryFlag.cpp.o -sys-header-deps -I /home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/src/ksp/pc/impls/hypre/ -I/home/brianlee/Documents/asc/OpenCAEPoro/lapack-3.11/CBLAS/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/petsc_install/include/ -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/metis/include -I/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/include -I/home/brianlee/Documents/asc/OpenCAEPoro/petsc-3.19.3/include/ -I/home/brianlee/intel/oneapi/tbb/2021.12/env/../include -I/home/brianlee/intel/oneapi/mpi/2021.12/include -I/home/brianlee/intel/oneapi/mkl/2024.1/include -I/home/brianlee/intel/oneapi/ippcp/2021.11/include -I/home/brianlee/intel/oneapi/ipp/2021.11/include -I/home/brianlee/intel/oneapi/dpl/2022.5/include -I/home/brianlee/intel/oneapi/dpcpp-ct/2024.1/include -I/home/brianlee/intel/oneapi/dnnl/2024.1/include -I/home/brianlee/intel/oneapi/dev-utilities/2024.1/include -I/home/brianlee/intel/oneapi/dal/2024.2/include/dal -I/home/brianlee/intel/oneapi/compiler/2024.1/opt/oclfpga/include -I/home/brianlee/intel/oneapi/ccl/2021.12/include -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/x86_64-redhat-linux -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/backward -internal-isystem /home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -std=gnu++14 -fdeprecated-macro -ferror-limit 19 -fheinous-gnu-extensions -fopenmp-late-outline -fopenmp-threadprivate-legacy -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -mllvm -paropt=31 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o CMakeFiles/cmTC_d2607.dir/OpenMPTryFlag.cpp.o -x c++ /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-owGcVm/OpenMPTryFlag.cpp]
         ignore line: [clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-unknown-linux-gnu]
         ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include"]
         ignore line: [ignoring nonexistent directory "/include"]
@@ -1306,9 +1306,9 @@ events:
         ignore line: [ /usr/local/include]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_85604]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_85604.dir/link.txt --verbose=1]
-        ignore line: [/home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicpx  -fiopenmp -v CMakeFiles/cmTC_85604.dir/OpenMPTryFlag.cpp.o -o cmTC_85604  -v ]
+        ignore line: [Linking CXX executable cmTC_d2607]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2607.dir/link.txt --verbose=1]
+        ignore line: [/home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicpx  -fiopenmp -v CMakeFiles/cmTC_d2607.dir/OpenMPTryFlag.cpp.o -o cmTC_d2607  -v ]
         ignore line: [mpiicpx for the Intel(R) MPI Library @IMPI_OFFICIALVERSION@ for Linux*]
         ignore line: [Copyright Intel Corporation.]
         ignore line: [mpiicpx for the Intel(R) MPI Library @IMPI_OFFICIALVERSION@ for Linux*]
@@ -1327,7 +1327,7 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [Found CUDA installation: /usr/local/cuda-12.4  version ]
-        link line: [ "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_85604 /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/usr/lib/gcc/x86_64-redhat-linux/14 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../.. -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib -L/home/brianlee/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/home/brianlee/intel/oneapi/mpi/2021.12/lib -L/home/brianlee/intel/oneapi/mkl/2024.1/lib/ -L/home/brianlee/intel/oneapi/ippcp/2021.11/lib/ -L/home/brianlee/intel/oneapi/ipp/2021.11/lib -L/home/brianlee/intel/oneapi/dpl/2022.5/lib -L/home/brianlee/intel/oneapi/dnnl/2024.1/lib -L/home/brianlee/intel/oneapi/dal/2024.2/lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib -L/home/brianlee/intel/oneapi/ccl/2021.12/lib/ CMakeFiles/cmTC_85604.dir/OpenMPTryFlag.cpp.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -lstdc++ -Bstatic -limf -Bdynamic -lm -lgcc_s -lgcc -Bstatic -lirc -Bdynamic -ldl -liomp5 -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/lib -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc -Bstatic -lirc_s -Bdynamic /usr/lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o]
+        link line: [ "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_d2607 /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/usr/lib/gcc/x86_64-redhat-linux/14 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../.. -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib -L/home/brianlee/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/home/brianlee/intel/oneapi/mpi/2021.12/lib -L/home/brianlee/intel/oneapi/mkl/2024.1/lib/ -L/home/brianlee/intel/oneapi/ippcp/2021.11/lib/ -L/home/brianlee/intel/oneapi/ipp/2021.11/lib -L/home/brianlee/intel/oneapi/dpl/2022.5/lib -L/home/brianlee/intel/oneapi/dnnl/2024.1/lib -L/home/brianlee/intel/oneapi/dal/2024.2/lib -L/home/brianlee/intel/oneapi/compiler/2024.1/lib -L/home/brianlee/intel/oneapi/ccl/2021.12/lib/ CMakeFiles/cmTC_d2607.dir/OpenMPTryFlag.cpp.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -lstdc++ -Bstatic -limf -Bdynamic -lm -lgcc_s -lgcc -Bstatic -lirc -Bdynamic -ldl -liomp5 -L/home/brianlee/intel/oneapi/compiler/2024.1/bin/lib -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc -Bstatic -lirc_s -Bdynamic /usr/lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o]
           arg [/usr/bin/ld] ==> ignore
           arg [--hash-style=gnu] ==> ignore
           arg [--eh-frame-hdr] ==> ignore
@@ -1336,7 +1336,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_85604] ==> ignore
+          arg [cmTC_d2607] ==> ignore
           arg [-L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib] ==> dir [/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib]
           arg [-L/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib] ==> dir [/home/brianlee/intel/oneapi/compiler/2024.1/bin/compiler/../../lib]
           arg [-L/home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu] ==> dir [/home/brianlee/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu]
@@ -1360,7 +1360,7 @@ events:
           arg [-L/home/brianlee/intel/oneapi/dal/2024.2/lib] ==> dir [/home/brianlee/intel/oneapi/dal/2024.2/lib]
           arg [-L/home/brianlee/intel/oneapi/compiler/2024.1/lib] ==> dir [/home/brianlee/intel/oneapi/compiler/2024.1/lib]
           arg [-L/home/brianlee/intel/oneapi/ccl/2021.12/lib/] ==> dir [/home/brianlee/intel/oneapi/ccl/2021.12/lib/]
-          arg [CMakeFiles/cmTC_85604.dir/OpenMPTryFlag.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_d2607.dir/OpenMPTryFlag.cpp.o] ==> ignore
           arg [-Bstatic] ==> search static
           arg [-lsvml] ==> lib [svml]
           arg [-Bdynamic] ==> search dynamic
@@ -1428,8 +1428,8 @@ events:
       - "external/CMakeLists.txt:18 (include)"
     description: "Detecting C OpenMP version"
     directories:
-      source: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-elf1k5"
-      binary: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-elf1k5"
+      source: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-QdtWxC"
+      binary: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-QdtWxC"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g -Rno-debug-disables-optimization"
@@ -1439,17 +1439,17 @@ events:
       variable: "OpenMP_SPECTEST_C_"
       cached: true
       stdout: |
-        Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-elf1k5'
+        Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-QdtWxC'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a5daa/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_a5daa.dir/build.make CMakeFiles/cmTC_a5daa.dir/build
-        gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-elf1k5'
-        Building C object CMakeFiles/cmTC_a5daa.dir/OpenMPCheckVersion.c.o
-        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx   -fiopenmp -MD -MT CMakeFiles/cmTC_a5daa.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_a5daa.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_a5daa.dir/OpenMPCheckVersion.c.o -c /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-elf1k5/OpenMPCheckVersion.c
-        Linking C executable cmTC_a5daa
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a5daa.dir/link.txt --verbose=1
-        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx  -fiopenmp CMakeFiles/cmTC_a5daa.dir/OpenMPCheckVersion.c.o -o cmTC_a5daa 
-        gmake[1]: Leaving directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-elf1k5'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f6862/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f6862.dir/build.make CMakeFiles/cmTC_f6862.dir/build
+        gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-QdtWxC'
+        Building C object CMakeFiles/cmTC_f6862.dir/OpenMPCheckVersion.c.o
+        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx   -fiopenmp -MD -MT CMakeFiles/cmTC_f6862.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_f6862.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_f6862.dir/OpenMPCheckVersion.c.o -c /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-QdtWxC/OpenMPCheckVersion.c
+        Linking C executable cmTC_f6862
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f6862.dir/link.txt --verbose=1
+        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx  -fiopenmp CMakeFiles/cmTC_f6862.dir/OpenMPCheckVersion.c.o -o cmTC_f6862 
+        gmake[1]: Leaving directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-QdtWxC'
         
       exitCode: 0
   -
@@ -1461,8 +1461,8 @@ events:
       - "external/CMakeLists.txt:18 (include)"
     description: "Detecting CXX OpenMP version"
     directories:
-      source: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-OGVYW6"
-      binary: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-OGVYW6"
+      source: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-eVtfJw"
+      binary: "/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-eVtfJw"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g -Rno-debug-disables-optimization"
@@ -1472,17 +1472,17 @@ events:
       variable: "OpenMP_SPECTEST_CXX_"
       cached: true
       stdout: |
-        Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-OGVYW6'
+        Change Dir: '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-eVtfJw'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c21f6/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_c21f6.dir/build.make CMakeFiles/cmTC_c21f6.dir/build
-        gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-OGVYW6'
-        Building CXX object CMakeFiles/cmTC_c21f6.dir/OpenMPCheckVersion.cpp.o
-        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicpx   -fiopenmp -std=gnu++14 -MD -MT CMakeFiles/cmTC_c21f6.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_c21f6.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_c21f6.dir/OpenMPCheckVersion.cpp.o -c /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-OGVYW6/OpenMPCheckVersion.cpp
-        Linking CXX executable cmTC_c21f6
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c21f6.dir/link.txt --verbose=1
-        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicpx  -fiopenmp CMakeFiles/cmTC_c21f6.dir/OpenMPCheckVersion.cpp.o -o cmTC_c21f6 
-        gmake[1]: Leaving directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-OGVYW6'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a0247/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a0247.dir/build.make CMakeFiles/cmTC_a0247.dir/build
+        gmake[1]: Entering directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-eVtfJw'
+        Building CXX object CMakeFiles/cmTC_a0247.dir/OpenMPCheckVersion.cpp.o
+        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicpx   -fiopenmp -std=gnu++14 -MD -MT CMakeFiles/cmTC_a0247.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_a0247.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_a0247.dir/OpenMPCheckVersion.cpp.o -c /home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-eVtfJw/OpenMPCheckVersion.cpp
+        Linking CXX executable cmTC_a0247
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0247.dir/link.txt --verbose=1
+        /home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicpx  -fiopenmp CMakeFiles/cmTC_a0247.dir/OpenMPCheckVersion.cpp.o -o cmTC_a0247 
+        gmake[1]: Leaving directory '/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/CMakeFiles/CMakeScratch/TryCompile-eVtfJw'
         
       exitCode: 0
 ...

@@ -15,7 +15,6 @@
 #include <string>
 #include <mpi.h>
 #include <omp.h>
-
 // OpenCAEPoroX header files
 #include "OCP.hpp"
 #include "PreProcess.hpp"
