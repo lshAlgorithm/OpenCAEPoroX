@@ -11,8 +11,9 @@
 # export I_MPI_JOB_RESPECT_PROCESS_PLACEMENT=0
 
 
+export OMP_NUM_THREADS=3    # 指定线程数
 for np    # 指定进程数
-in 1
+in 4
 do
-	mpirun -n 4 ./testOpenCAEPoro ./data/test/test.data verbose=1
+	mpirun -n $np aps ./testOpenCAEPoro ./data/case1/case1.data verbose=1
 done

@@ -75,13 +75,12 @@ void Solver::RunSimulation(Reservoir& rs, OCPControl& ctrl, OCPOutput& output)
         while (!ctrl.time.IfEnd()) {
             output.PrintCurrentTimeIter(ctrl);
 
-
             /*
                 Core func! -- Li Shuhuai
             */
             const OCPNRsuite& NR = GoOneStep(rs, ctrl);
 
-
+            cout << "===========YES YES YES, Go one step!==================\n";
             output.SetVal(rs, ctrl, NR);
             if (ctrl.printLevel >= PRINT_ALL) {
                 // Print Summary and critical information at every time step
@@ -119,7 +118,7 @@ const OCPNRsuite& Solver::GoOneStepIsoT(Reservoir& rs, OCPControl& ctrl)
 {
     // Prepare for time marching
     IsoTSolver.Prepare(rs, ctrl);
-    
+    cout << "===========Preparation finished!!!!!==================\n";
     /*
         UPDATE STEP BY STEP -- Li Shuhuai    
     */
@@ -134,15 +133,19 @@ const OCPNRsuite& Solver::GoOneStepIsoT(Reservoir& rs, OCPControl& ctrl)
 
         // Assemble linear system
         IsoTSolver.AssembleMat(rs, ctrl);
+        cout << "===========AssembleMat==================\n";
         // Solve linear system
         IsoTSolver.SolveLinearSystem(rs, ctrl);
+        cout << "===========SolveLinearSystem==================\n";
         if (!IsoTSolver.UpdateProperty(rs, ctrl)) {
             continue;
         }
+        cout << "===========updateProperty==================\n";
         if (IsoTSolver.FinishNR(rs, ctrl)) break;
     }
 
     // Finish current time step
+    cout << "===========OCP Iteration finished!==================\n";
     IsoTSolver.FinishStep(rs, ctrl);
 
     return IsoTSolver.GetNRsuite();

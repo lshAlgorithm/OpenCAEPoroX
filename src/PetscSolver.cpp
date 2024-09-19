@@ -14,6 +14,7 @@
 #ifdef WITH_PETSCSOLVER
 
 #include "PetscSolver.hpp"
+#include <omp.h>
 
 double MATRIX_CONVERSION_TIME;
 
@@ -60,10 +61,13 @@ void PetscSolver::AssembleMat(const vector<vector<USI>>& colId,
     vector<OCP_SLL> tmpJ;
     // Assemble iA, jA, A
     iA[0] = 0;
+    
     for (OCP_USI i = 1; i < dim + 1; i++) {
         const USI nnzR = colId[i - 1].size();
 
         tmpJ.resize(nnzR);
+        
+        #pragma omp parallel for
         for (USI j = 0; j < nnzR; j++) {
             tmpJ[j] = global_index->at(colId[i - 1][j]);
         }
@@ -99,10 +103,8 @@ OCP_INT VectorPetscSolver::Solve()
     /*
         Where is the implementation of FIM_solver? -- Li Shuhuai
     */
-    int iter = FIM_solver_p(precondID, is_thermal, myrank, numproc, blockdim, allBegin.data(), allEnd.data(), iA.data(), jA.data(), A.data(), b, x, &MATRIX_CONVERSION_TIME);
+    return FIM_solver_p(precondID, is_thermal, myrank, numproc, blockdim, allBegin.data(), allEnd.data(), iA.data(), jA.data(), A.data(), b, x, &MATRIX_CONVERSION_TIME);
     // if(myrank == 0) printf("MATRIX_CONVERSION_TIME = %f s\n", MATRIX_CONVERSION_TIME);
-
-    return iter;
 }
 
 #endif // WITH_PETSCSOLVER

@@ -55,10 +55,10 @@ CMAKE_CONFIGURATION_TYPES:STRING=Release;Debug
 CMAKE_CXX_COMPILER:FILEPATH=/home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicpx
 
 //LLVM archiver
-CMAKE_CXX_COMPILER_AR:FILEPATH=CMAKE_CXX_COMPILER_AR-NOTFOUND
+CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/llvm-ar
 
 //Generate index for LLVM archive
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=CMAKE_CXX_COMPILER_RANLIB-NOTFOUND
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/llvm-ranlib
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -79,10 +79,10 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 CMAKE_C_COMPILER:FILEPATH=/home/brianlee/intel/oneapi/mpi/2021.12/bin/mpiicx
 
 //LLVM archiver
-CMAKE_C_COMPILER_AR:FILEPATH=CMAKE_C_COMPILER_AR-NOTFOUND
+CMAKE_C_COMPILER_AR:FILEPATH=/usr/bin/llvm-ar
 
 //Generate index for LLVM archive
-CMAKE_C_COMPILER_RANLIB:FILEPATH=CMAKE_C_COMPILER_RANLIB-NOTFOUND
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/bin/llvm-ranlib
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -233,7 +233,7 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // .SILENT directive, and all commands will be echoed to the console
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
-CMAKE_VERBOSE_MAKEFILE:BOOL=OFF
+CMAKE_VERBOSE_MAKEFILE:BOOL=ON
 
 //Directory under which to collect all populated content
 FETCHCONTENT_BASE_DIR:PATH=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro/build/_deps
@@ -262,6 +262,24 @@ OpenCAEPoroX_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 OpenCAEPoroX_SOURCE_DIR:STATIC=/home/brianlee/Documents/asc/OpenCAEPoro/OpenCAEPoro
+
+//CXX compiler flags for OpenMP parallelization
+OpenMP_CXX_FLAGS:STRING=-fiopenmp
+
+//CXX compiler libraries for OpenMP parallelization
+OpenMP_CXX_LIB_NAMES:STRING=iomp5;pthread
+
+//C compiler flags for OpenMP parallelization
+OpenMP_C_FLAGS:STRING=-fiopenmp
+
+//C compiler libraries for OpenMP parallelization
+OpenMP_C_LIB_NAMES:STRING=iomp5;pthread
+
+//Path to the iomp5 library for OpenMP
+OpenMP_iomp5_LIBRARY:FILEPATH=/home/brianlee/intel/oneapi/compiler/2024.1/lib/libiomp5.so
+
+//Path to the pthread library for OpenMP
+OpenMP_pthread_LIBRARY:FILEPATH=/usr/lib64/libpthread.a
 
 //Directory where the PARMETIS header is located
 PARMETIS_INCLUDE_DIRS:PATH=/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/include
@@ -302,8 +320,8 @@ USE_METIS:BOOL=ON
 //Use MUMPS
 USE_MUMPS:BOOL=OFF
 
-//Use OPENMP
-USE_OPENMP:BOOL=OFF
+//No help, variable specified on the command line.
+USE_OPENMP:UNINITIALIZED=ON
 
 //Use PARDISO
 USE_PARDISO:BOOL=OFF
@@ -502,6 +520,12 @@ FIND_PACKAGE_MESSAGE_DETAILS_BLAS:INTERNAL=[/home/brianlee/intel/oneapi/mkl/2024
 FIND_PACKAGE_MESSAGE_DETAILS_LAPACK:INTERNAL=[/home/brianlee/intel/oneapi/mkl/2024.1/lib/libmkl_intel_lp64.so;/home/brianlee/intel/oneapi/mkl/2024.1/lib/libmkl_intel_thread.so;/home/brianlee/intel/oneapi/mkl/2024.1/lib/libmkl_core.so;/home/brianlee/intel/oneapi/compiler/2024.1/lib/libiomp5.so;-lm;-ldl;-lm;-ldl][v()]
 //Details about finding METIS
 FIND_PACKAGE_MESSAGE_DETAILS_METIS:INTERNAL=[;/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/build/Linux-x86_64/libmetis/libmetis.a][/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/metis/include][v()]
+//Details about finding OpenMP
+FIND_PACKAGE_MESSAGE_DETAILS_OpenMP:INTERNAL=[TRUE][TRUE][c ][v5.1()]
+//Details about finding OpenMP_C
+FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_C:INTERNAL=[-fiopenmp][/home/brianlee/intel/oneapi/compiler/2024.1/lib/libiomp5.so][/usr/lib64/libpthread.a][v5.1()]
+//Details about finding OpenMP_CXX
+FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_CXX:INTERNAL=[-fiopenmp][/home/brianlee/intel/oneapi/compiler/2024.1/lib/libiomp5.so][/usr/lib64/libpthread.a][v5.1()]
 //Details about finding PARMETIS
 FIND_PACKAGE_MESSAGE_DETAILS_PARMETIS:INTERNAL=[;/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/build/Linux-x86_64/libparmetis/libparmetis.a][/home/brianlee/Documents/asc/OpenCAEPoro/parmetis-4.0.3/include][v()]
 //Details about finding PETSC
@@ -516,6 +540,30 @@ LAPACK_WORKS:INTERNAL=1
 LIBNAME:INTERNAL=OpenCAEPoroX
 //ADVANCED property for variable: METIS_INCLUDE_DIRS
 METIS_INCLUDE_DIRS-ADVANCED:INTERNAL=1
+//Result of TRY_COMPILE
+OpenMP_COMPILE_RESULT_CXX_fiopenmp:INTERNAL=TRUE
+//Result of TRY_COMPILE
+OpenMP_COMPILE_RESULT_C_fiopenmp:INTERNAL=TRUE
+//ADVANCED property for variable: OpenMP_CXX_FLAGS
+OpenMP_CXX_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenMP_CXX_LIB_NAMES
+OpenMP_CXX_LIB_NAMES-ADVANCED:INTERNAL=1
+//CXX compiler's OpenMP specification date
+OpenMP_CXX_SPEC_DATE:INTERNAL=202011
+//ADVANCED property for variable: OpenMP_C_FLAGS
+OpenMP_C_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenMP_C_LIB_NAMES
+OpenMP_C_LIB_NAMES-ADVANCED:INTERNAL=1
+//C compiler's OpenMP specification date
+OpenMP_C_SPEC_DATE:INTERNAL=202011
+//Result of TRY_COMPILE
+OpenMP_SPECTEST_CXX_:INTERNAL=TRUE
+//Result of TRY_COMPILE
+OpenMP_SPECTEST_C_:INTERNAL=TRUE
+//ADVANCED property for variable: OpenMP_iomp5_LIBRARY
+OpenMP_iomp5_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenMP_pthread_LIBRARY
+OpenMP_pthread_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PARMETIS_INCLUDE_DIRS
 PARMETIS_INCLUDE_DIRS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PETSCSOLVER_INCLUDE_DIRS

@@ -19,6 +19,8 @@
 void IsothermalMethod::CalRock(Bulk& bk) const
 {
     auto& bvs = bk.vs;
+
+    // #pragma omp parallel for
     for (OCP_USI n = 0; n < bvs.nb; n++) {
         auto ROCK = bk.ROCKm.GetROCK(n);
 
@@ -691,10 +693,14 @@ void IsoT_FIM::Prepare(Reservoir& rs, const OCP_DBL& dt)
 {
     // Calculate well property at the beginning of next time step
     rs.allWells.PrepareWell(rs.bulk);
+    cout << "===========PrepareWell finished!!==================\n";
     // Calculate initial residual
     CalRes(rs, dt);
+    cout << "===========initial residual==================\n";
     NR.InitStep(rs.bulk.GetVarSet());
+    cout << "===========InitStep==================\n";
     NR.InitIter();
+    cout << "===========InitIter==================\n";
 }
 
 void IsoT_FIM::AssembleMat(LinearSystem&    ls,
@@ -703,9 +709,12 @@ void IsoT_FIM::AssembleMat(LinearSystem&    ls,
 {
     // Assemble matrix
     AssembleMatBulks(ls, rs, dt);
+    cout << "===========Bulks==================\n";
     AssembleMatWells(ls, rs, dt);
+    cout << "===========Wells==================\n";
     // Assemble rhs -- from residual
     ls.AssembleRhsCopy(NR.res.resAbs);
+    cout << "===========Copy back==================\n";
 }
 
 
@@ -718,11 +727,14 @@ void IsoT_FIM::SolveLinearSystem(LinearSystem& ls,
     // Check if inf or nan occurs in A and b
     ls.CheckEquation();
 #endif // DEBUG
-
+    cout << "===========HERE WE ARE!==================\n";
     GetWallTime timer;
     timer.Start();
+    cout << "============I can start time counter=====================\n";
     ls.CalCommTerm(rs.GetNumOpenWell());
+    cout << "===========YOU CANNOT FINISH CAL COMMTERM???==================\n";
     ls.AssembleMatLinearSolver();
+    cout << "===========Assemble Mat Linear Solver==================\n";
     OCPTIME_ASSEMBLE_MAT_FOR_LS += timer.Stop() / TIME_S2MS;
 
     // Solve linear system
@@ -734,7 +746,7 @@ void IsoT_FIM::SolveLinearSystem(LinearSystem& ls,
         It seems to be encapsulated by petsc
     */
     int status = ls.Solve();
-
+    cout << "===========Solve it!!!==================\n";
 
     if (status < 0) {
         status = ls.GetNumIters();
@@ -743,6 +755,7 @@ void IsoT_FIM::SolveLinearSystem(LinearSystem& ls,
     OCPTIME_LSOLVER += timer.Stop() / TIME_S2MS;
 
     NR.UpdateIter(status);
+    cout << "===========Update over in SolveLinearSystem after assemble mat==================\n";
 
      
 #ifdef DEBUG
@@ -928,6 +941,7 @@ void IsoT_FIM::InitFlash(Bulk& bk)
 {
     BulkVarSet& bvs = bk.vs;
 
+    // #pragma omp parallel for
     for (OCP_USI n = 0; n < bvs.nb; n++) {
         auto PVT = bk.PVTm.GetPVT(n);
 
@@ -954,6 +968,7 @@ void IsoT_FIM::CalFlash(Bulk& bk)
 {
     const BulkVarSet& bvs = bk.vs;
 
+    // #pragma omp parallel for
     for (OCP_USI n = 0; n < bvs.nb; n++) {
 
         bk.PVTm.GetPVT(n)->FlashFIM(n, bvs);
@@ -972,6 +987,7 @@ void IsoT_FIM::CalFlash(Bulk& bk)
     }
 }
 
+// No you cannot -- Li Shuhuai
 void IsoT_FIM::PassFlashValue(Bulk& bk, const OCP_USI& n)
 {
     auto&         bvs = bk.vs;
@@ -1022,6 +1038,9 @@ void IsoT_FIM::CalKrPc(Bulk& bk) const
 {
     BulkVarSet& bvs = bk.vs;
     const USI&  np  = bvs.np;
+
+
+    // #pragma omp parallel for
     for (OCP_USI n = 0; n < bvs.nb; n++) {
         auto SAT = bk.SATm.GetSAT(n);
 
@@ -1060,6 +1079,7 @@ void IsoT_FIM::CalRes(Reservoir& rs, const OCP_DBL& dt)
     BulkConn&       conn = rs.conn;
     BulkConnVarSet& bcvs = conn.vs;
     USI             fluxnum;
+    // #pragma omp parallel for
     for (OCP_USI c = 0; c < conn.numConn; c++) {
 
         bId       = conn.iteratorConn[c].BId();
@@ -1157,6 +1177,8 @@ void IsoT_FIM::AssembleMatBulks(LinearSystem&    ls,
     vector<OCP_DBL> bmat(bsize, 0);
     OCP_USI  bId, eId;
     USI      fluxnum;
+
+    // #pragma omp parallel for
     for (OCP_USI c = 0; c < conn.numConn; c++) {
 
         bId       = conn.iteratorConn[c].BId();
@@ -1246,6 +1268,11 @@ void IsoT_FIM::GetSolution(Reservoir&        rs,
 
     // Well first
     USI wId = bvs.nbI * col;
+
+    /*
+        Have added parallel inside --Li Shuhuai
+        To be answered: whether it is good to be outside here or inside?
+    */
     for (auto& wl : rs.allWells.wells) {
         wl->GetSolutionFIM(u, wId);
     }
@@ -1257,12 +1284,17 @@ void IsoT_FIM::GetSolution(Reservoir&        rs,
     
 
     // Exchange Solution for ghost grid
+    // You definitely know about the GHOST GRID, try a better exchange policy -- Li Shuhuai
+    // #pragma omp parallel for
     for (USI i = 0; i < domain.numRecvProc; i++) {
         const vector<OCP_USI>& rel = domain.recv_element_loc[i];
         MPI_Irecv(&u[rel[1] * col], (rel[2] - rel[1]) * col, OCPMPI_DBL, rel[0], 0, domain.myComm, &domain.recv_request[i]);
     }
    
     vector<vector<OCP_DBL>> send_buffer(domain.numSendProc);
+
+    
+    // #pragma omp parallel for
     for (USI i = 0; i < domain.numSendProc; i++) {
         const vector<OCP_USI>& sel = domain.send_element_loc[i];
         vector<OCP_DBL>&       s   = send_buffer[i];
@@ -1287,6 +1319,8 @@ void IsoT_FIM::GetSolution(Reservoir&        rs,
     OCP_USI eId = bvs.nbI;
 
     // interior first, ghost second
+
+    // Well, it looks big and I don't change it easily -- Li Shuhuai
     for (USI p = 0; p < 2; p++) {
   
         timerC.Start();

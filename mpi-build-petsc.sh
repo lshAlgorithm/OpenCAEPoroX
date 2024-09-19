@@ -23,22 +23,13 @@ export CPATH=$ROOT_DIR/petsc-3.19.3/include/:$CPATH
 export CPATH=$ROOT_DIR/petsc-3.19.3/petsc_install/include/:$ROOT_DIR/parmetis-4.0.3/metis/include:$ROOT_DIR/parmetis-4.0.3/include:$CPATH
 export CPATH=$ROOT_DIR/lapack-3.11/CBLAS/include/:$CPATH
 export CPATH=$ROOT_DIR/petsc-3.19.3/src/ksp/pc/impls/hypre/:$CPATH
-# export CPATH=$ROOT_DIR/hypre-2.28.0/hypre-install/include:$CPATH
 
-# 设置HYPRE库和头文件的路径
-#HYPRE_DIR=$ROOT_DIR/hypre-2.28.0/hypre-install
-
-# 设置LDFLAGS，以便链接器能找到HYPRE库
-# export LDFLAGS="${LDFLAGS} -L${HYPRE_DIR}/lib -lhypre"
-
-# 设置CPPFLAGS，以便编译器能找到HYPRE的头文件
-# export CPPFLAGS="-I${HYPRE_DIR}/include ${CPPFLAGS}"
 
 # install
 rm -fr build; mkdir build; cd build;
 
-echo "cmake -DUSE_PETSCSOLVER=ON -DUSE_PARMETIS=ON -DUSE_METIS=ON -DCMAKE_VERBOSE_MAKEFILE=OFF -DCMAKE_BUILD_TYPE=Debug .."
-cmake -DUSE_PETSCSOLVER=ON -DUSE_PARMETIS=ON -DUSE_METIS=ON -DCMAKE_VERBOSE_MAKEFILE=OFF -DCMAKE_BUILD_TYPE=Debug ..
+echo "cmake -DUSE_OPENMP=ON -DUSE_PETSCSOLVER=ON -DUSE_PARMETIS=ON -DUSE_METIS=ON -DCMAKE_VERBOSE_MAKEFILE=OFF -DCMAKE_BUILD_TYPE=Debug .."
+cmake -DUSE_OPENMP=ON -DUSE_PETSCSOLVER=ON -DUSE_PARMETIS=ON -DUSE_METIS=ON -DCMAKE_VERBOSE_MAKEFILE=ON -DCMAKE_BUILD_TYPE=Debug ..
 #cmake -DUSE_PARMETIS=ON -DUSE_METIS=ON -DUSE_PETSCSOLVER=ON -DCMAKE_VERBOSE_MAKEFILE=OFF -DCMAKE_BUILD_TYPE=Release ..
 
 echo "make -j 32"

@@ -133,6 +133,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake/Modules/FetchContent.cmake"
   "/usr/share/cmake/Modules/FindBLAS.cmake"
   "/usr/share/cmake/Modules/FindLAPACK.cmake"
+  "/usr/share/cmake/Modules/FindOpenMP.cmake"
   "/usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
   "/usr/share/cmake/Modules/FindPackageMessage.cmake"
   "/usr/share/cmake/Modules/FindThreads.cmake"

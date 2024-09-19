@@ -99,6 +99,8 @@ void IsothermalSolver::AssembleMat(const Reservoir& rs, OCPControl& ctrl)
 /// Solve linear systems for IMPEC and FIM.
 void IsothermalSolver::SolveLinearSystem(Reservoir& rs, OCPControl& ctrl)
 { 
+
+    cout << "===========I entered==================\n";
     switch (method) {
         case IMPEC:
             impec.SolveLinearSystem(LSolver, rs, ctrl);

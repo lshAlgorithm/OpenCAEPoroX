@@ -14,6 +14,7 @@
 #include <iostream>
 #include <string>
 #include <mpi.h>
+#include <omp.h>
 
 // OpenCAEPoroX header files
 #include "OCP.hpp"
@@ -33,6 +34,7 @@ int main(int argc, char* argv[])
 
     OpenCAEPoroX simulator;
 
+
     // Step 0. Print simulator version information.   -- Never mind
     if (myRank == MASTER_PROCESS) {
         if (argc < 2) {
@@ -48,24 +50,29 @@ int main(int argc, char* argv[])
         }
     }
 
+    cout << "===========before step1==================\n";
     {
         // Step 1. Input and generate Grid infomation and partition
         PreProcess preProcess(argv[1], myRank, MPI_COMM_WORLD);
-
+        cout << "===========before step2==================\n";
         // Step 2. Input reservoir information and distribute
         simulator.InputDistParam(argv[1], preProcess, myRank);
     }
 
     // Step 3. Setup params
+    cout << "===========before step3==================\n";
     simulator.SetupSimulator(argc, const_cast<const char**>(argv));
 
     // Step 4. Initialize the reservoir
+    cout << "===========before step4==================\n";
     simulator.InitReservoir();
 
     // Step 4. Run dynamic simulation using methods like IMPEC, AIM, and FIM.
+    cout << "===========before step5==================\n";
     simulator.RunSimulation();
 
     // Step 5. Output the results according to control params.
+    cout << "===========before step6==================\n";
     simulator.OutputResults();
 
     MPI_Finalize();
