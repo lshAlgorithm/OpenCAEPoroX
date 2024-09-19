@@ -1,96 +1,93 @@
-# # Prerequisites
-# *.d
+# Prerequisites
+*.d
 
-# # Compiled Object files
-# *.slo
-# *.lo
-# *.o
-# *.obj
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
 
-# # Precompiled Headers
-# *.gch
-# *.pch
+# Precompiled Headers
+*.gch
+*.pch
 
-# # Compiled Dynamic libraries
-# *.so
-# *.dylib
-# *.dll
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
 
-# # Fortran module files
-# *.mod
-# *.smod
+# Fortran module files
+*.mod
+*.smod
 
-# # Compiled Static libraries
-# *.lai
-# *.la
-# *.a
-# *.lib
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
 
-# # Executables
-# *.exe
-# *.out
-# *.app
+# Executables
+*.exe
+*.out
+*.app
 
-# # Build results
-# x64/
-# x86/
+# Build results
+x64/
+x86/
 
-# # Visual Studio
-# .vs/
-# *.vcxproj
-# *.filters
-# *.sln
-# *.user
-# *.zip
-# /test
-# *.vtk
-# *.log
-# log/
-# # *.sh
+# Visual Studio
+.vs/
+*.vcxproj
+*.filters
+*.sln
+*.user
+*.zip
+/test
+*.vtk
+*.log
+log/
+# *.sh
 
 
-# data/
-
-# build/
-
-# aps_result**
-
-# *.html
-# # /data/ZBCO2
-# # /data/spe5/refine/tNavgator
-# # /data/spe5/E300
-# # /data/spe5/CMG
-# # /data/spe3/CMG
-# # /data/spe3/E300
-# # /data/spe1a/E100
-# # /data/spe9/E100
-# # /Build
-# # /data/cornerpoint/grid.tmpinfo
-# # /data/.vscode/settings.json
-# # /data/spe11/spe11a/compreg.bat
-
-# # build/
-# # !install-*.sh
-# # !createdoc.sh
-# # /data/spe11/spe11a-OG
-# # /data/spe11/spe11a-OG
-# # /data/spe11/spe11a/diffusion/spe11a.msh
-# # /data/spe11/spe11a/diffusion/1cm
-# # /data/spe11/spe11a/OG
-# # /data/spe11/spe11a/new
-# # /data/spe11/spe11a/OG1
-# # /data/spe11/spe11a/OG-1cm
-# # /data/spe11/spe11a/new-1cm
-# # /data/spe1a/test
-# # /data/spe5/test
-# # /log.txt
-# # /data/ddmtest/case1
-# # /data/spe1a/example.pvd
-# # /data/spe1a/rename_files.bat
-# # /data/spe1a/nametable.txt
-
-# # .idea/
-# # config/user.cmake
+data/
 
 build/
-aps_result_*/
+
+aps_result**
+
+*.html
+# /data/ZBCO2
+# /data/spe5/refine/tNavgator
+# /data/spe5/E300
+# /data/spe5/CMG
+# /data/spe3/CMG
+# /data/spe3/E300
+# /data/spe1a/E100
+# /data/spe9/E100
+# /Build
+# /data/cornerpoint/grid.tmpinfo
+# /data/.vscode/settings.json
+# /data/spe11/spe11a/compreg.bat
+
+# build/
+# !install-*.sh
+# !createdoc.sh
+# /data/spe11/spe11a-OG
+# /data/spe11/spe11a-OG
+# /data/spe11/spe11a/diffusion/spe11a.msh
+# /data/spe11/spe11a/diffusion/1cm
+# /data/spe11/spe11a/OG
+# /data/spe11/spe11a/new
+# /data/spe11/spe11a/OG1
+# /data/spe11/spe11a/OG-1cm
+# /data/spe11/spe11a/new-1cm
+# /data/spe1a/test
+# /data/spe5/test
+# /log.txt
+# /data/ddmtest/case1
+# /data/spe1a/example.pvd
+# /data/spe1a/rename_files.bat
+# /data/spe1a/nametable.txt
+
+# .idea/
+# config/user.cmake
