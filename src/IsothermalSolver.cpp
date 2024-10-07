@@ -91,8 +91,10 @@ void IsothermalSolver::AssembleMat(const Reservoir& rs, OCPControl& ctrl)
         default:
             OCP_ABORT("Wrong method type!");
     }
-   
+#pragma omp single
+{
     OCPTIME_ASSEMBLE_MAT += timer.Stop() / TIME_S2MS;
+}
 }
 
 
@@ -106,6 +108,7 @@ void IsothermalSolver::SolveLinearSystem(Reservoir& rs, OCPControl& ctrl)
             impec.SolveLinearSystem(LSolver, rs, ctrl);
             break;
         case FIM:
+        cout << "===========Begin to solve==================\n";
             fim.SolveLinearSystem(LSolver, rs, ctrl);
             break;
         case AIMc:

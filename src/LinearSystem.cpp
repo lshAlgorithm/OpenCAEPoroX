@@ -69,7 +69,10 @@ void LinearSystem::AssembleRhsAccumulate(const vector<OCP_DBL>& rhs)
 
 void LinearSystem::AssembleRhsCopy(const vector<OCP_DBL>& rhs)
 {
+#pragma omp single
+{
     copy(rhs.begin(), rhs.end(), b.data());
+}
 }
 
 void LinearSystem::OutputLinearSystem(const string& fileA, const string& fileb) const

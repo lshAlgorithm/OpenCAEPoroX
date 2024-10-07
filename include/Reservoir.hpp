@@ -114,21 +114,21 @@ public:
     /// Calculate num of Injection, Production
     void CalIPRT(const OCP_DBL& dt);
     /// Return the num of Bulk
-    OCP_USI GetBulkNum() const { return bulk.GetBulkNum(); }
+    inline OCP_USI GetBulkNum() const { return bulk.GetBulkNum(); }
     /// Return the num of Bulk
-    OCP_USI GetInteriorBulkNum() const { return bulk.GetInteriorBulkNum(); }
+    inline OCP_USI GetInteriorBulkNum() const { return bulk.GetInteriorBulkNum(); }
     /// Return the num of Well
-    USI GetWellNum() const { return allWells.GetWellNum(); }
+    inline USI GetWellNum() const { return allWells.GetWellNum(); }
     /// Return the num of Components
-    USI GetComNum() const { return bulk.GetComNum(); }
+    inline USI GetComNum() const { return bulk.GetComNum(); }
     /// Return num of open well
-    USI GetNumOpenWell() const { return allWells.GetNumOpenWell(); }
+    inline USI GetNumOpenWell() const { return allWells.GetNumOpenWell(); }
     /// If oil exist
-    OCP_BOOL IfOilExist() const { return bulk.vs.o >= 0; }
+    inline OCP_BOOL IfOilExist() const { return bulk.vs.o >= 0; }
     /// If gas exist
-    OCP_BOOL IfGasExist() const { return bulk.vs.g >= 0; }
+    inline OCP_BOOL IfGasExist() const { return bulk.vs.g >= 0; }
     /// If water exist
-    OCP_BOOL IfWatExist() const { return bulk.vs.w >= 0; }
+    inline OCP_BOOL IfWatExist() const { return bulk.vs.w >= 0; }
 
 protected:
     Bulk             bulk;        ///< Active grid info.

@@ -14,7 +14,6 @@
 #ifdef WITH_PETSCSOLVER
 
 #include "PetscSolver.hpp"
-#include <omp.h>
 
 double MATRIX_CONVERSION_TIME;
 
@@ -60,14 +59,17 @@ void PetscSolver::AssembleMat(const vector<vector<USI>>& colId,
     const USI blockSize = blockdim * blockdim;
     vector<OCP_SLL> tmpJ;
     // Assemble iA, jA, A
+
+    #pragma omp single
+    {
     iA[0] = 0;
-    
+
+    // #pragma omp for schedule(guided)
     for (OCP_USI i = 1; i < dim + 1; i++) {
         const USI nnzR = colId[i - 1].size();
 
         tmpJ.resize(nnzR);
         
-        #pragma omp parallel for
         for (USI j = 0; j < nnzR; j++) {
             tmpJ[j] = global_index->at(colId[i - 1][j]);
         }
@@ -80,6 +82,7 @@ void PetscSolver::AssembleMat(const vector<vector<USI>>& colId,
 
     b = rhs.data();
     x = u.data();
+    }
 }
 
 

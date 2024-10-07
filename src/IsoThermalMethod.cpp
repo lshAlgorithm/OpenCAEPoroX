@@ -727,16 +727,20 @@ void IsoT_FIM::SolveLinearSystem(LinearSystem& ls,
     // Check if inf or nan occurs in A and b
     ls.CheckEquation();
 #endif // DEBUG
+
     cout << "===========HERE WE ARE!==================\n";
     GetWallTime timer;
     timer.Start();
+#pragma omp single
+{
     cout << "============I can start time counter=====================\n";
     ls.CalCommTerm(rs.GetNumOpenWell());
     cout << "===========YOU CANNOT FINISH CAL COMMTERM???==================\n";
+}
     ls.AssembleMatLinearSolver();
+
     cout << "===========Assemble Mat Linear Solver==================\n";
     OCPTIME_ASSEMBLE_MAT_FOR_LS += timer.Stop() / TIME_S2MS;
-
     // Solve linear system
     
     timer.Start();
@@ -747,6 +751,8 @@ void IsoT_FIM::SolveLinearSystem(LinearSystem& ls,
     */
     int status = ls.Solve();
     cout << "===========Solve it!!!==================\n";
+// #pragma omp single
+{
 
     if (status < 0) {
         status = ls.GetNumIters();
@@ -756,6 +762,7 @@ void IsoT_FIM::SolveLinearSystem(LinearSystem& ls,
 
     NR.UpdateIter(status);
     cout << "===========Update over in SolveLinearSystem after assemble mat==================\n";
+}
 
      
 #ifdef DEBUG
@@ -1151,24 +1158,26 @@ void IsoT_FIM::AssembleMatBulks(LinearSystem&    ls,
                                 const Reservoir& rs,
                                 const OCP_DBL&   dt) const
 {
-    const Bulk& bk  = rs.bulk;
-    const BulkVarSet& bvs = bk.vs;
+        const Bulk& bk  = rs.bulk;
+        const BulkVarSet& bvs = bk.vs;
 
-    const USI numWell = rs.GetNumOpenWell();
+        const USI numWell = rs.GetNumOpenWell();
 
-    const BulkConn& conn   = rs.conn;
-    const OCP_USI   nbI    = bvs.nbI;
-    const USI       np     = bvs.np;
-    const USI       nc     = bvs.nc;
-    const USI       ncol   = nc + 1;
-    const USI       ncol2  = np * nc + np;
-    const USI       bsize  = ncol * ncol;
-    const USI       bsize2 = ncol * ncol2;
+        const BulkConn& conn   = rs.conn;
+        const OCP_USI   nbI    = bvs.nbI;
+        const USI       np     = bvs.np;
+        const USI       nc     = bvs.nc;
+        const USI       ncol   = nc + 1;
+        const USI       ncol2  = np * nc + np;
+        const USI       bsize  = ncol * ncol;
+        const USI       bsize2 = ncol * ncol2;
 
-    ls.AddDim(nbI);
+        ls.AddDim(nbI);
+    
 
 
     // Accumulation term
+    #pragma omp for
     for (OCP_USI n = 0; n < nbI; n++) {
         ls.NewDiag(n, bk.ACCm.GetAccumuTerm()->CaldFdXpFIM(n, bvs, dt));
     }
@@ -1178,7 +1187,9 @@ void IsoT_FIM::AssembleMatBulks(LinearSystem&    ls,
     OCP_USI  bId, eId;
     USI      fluxnum;
 
-    // #pragma omp parallel for
+    // #pragma omp for
+    #pragma omp single
+    {
     for (OCP_USI c = 0; c < conn.numConn; c++) {
 
         bId       = conn.iteratorConn[c].BId();
@@ -1240,6 +1251,7 @@ void IsoT_FIM::AssembleMatBulks(LinearSystem&    ls,
         }
 #endif
     }
+    }
 }
 
 
@@ -1247,6 +1259,7 @@ void IsoT_FIM::AssembleMatWells(LinearSystem&    ls,
                                 const Reservoir& rs,
                                 const OCP_DBL&   dt) const
 {
+    #pragma omp for
     for (auto& wl : rs.allWells.wells) {
         wl->AssembleMatFIM(ls, rs.bulk, dt);
     }
@@ -1271,8 +1284,9 @@ void IsoT_FIM::GetSolution(Reservoir&        rs,
 
     /*
         Have added parallel inside --Li Shuhuai
-        To be answered: whether it is good to be outside here or inside?
+        To be answered: whether it is good to be outside here or inside? Outside
     */
+    #pragma omp for
     for (auto& wl : rs.allWells.wells) {
         wl->GetSolutionFIM(u, wId);
     }
@@ -1285,16 +1299,15 @@ void IsoT_FIM::GetSolution(Reservoir&        rs,
 
     // Exchange Solution for ghost grid
     // You definitely know about the GHOST GRID, try a better exchange policy -- Li Shuhuai
-    // #pragma omp parallel for
+    #pragma omp for
     for (USI i = 0; i < domain.numRecvProc; i++) {
         const vector<OCP_USI>& rel = domain.recv_element_loc[i];
         MPI_Irecv(&u[rel[1] * col], (rel[2] - rel[1]) * col, OCPMPI_DBL, rel[0], 0, domain.myComm, &domain.recv_request[i]);
     }
-   
-    vector<vector<OCP_DBL>> send_buffer(domain.numSendProc);
 
+    vector<vector<OCP_DBL>> send_buffer(domain.numSendProc);
     
-    // #pragma omp parallel for
+    #pragma omp for
     for (USI i = 0; i < domain.numSendProc; i++) {
         const vector<OCP_USI>& sel = domain.send_element_loc[i];
         vector<OCP_DBL>&       s   = send_buffer[i];
@@ -1307,6 +1320,7 @@ void IsoT_FIM::GetSolution(Reservoir&        rs,
         MPI_Isend(s.data() + 1, s.size() - 1, OCPMPI_DBL, s[0], 0, domain.myComm, &domain.send_request[i]);
     }
 
+
     // Bulk
     const OCP_DBL dSmaxlim = ctrlNR.DSmax();
     const OCP_DBL dPmaxlim = ctrlNR.DPmax();
@@ -1317,10 +1331,10 @@ void IsoT_FIM::GetSolution(Reservoir&        rs,
 
     OCP_USI bId = 0;
     OCP_USI eId = bvs.nbI;
-
     // interior first, ghost second
 
     // Well, it looks big and I don't change it easily -- Li Shuhuai
+    // #pragma omp for
     for (USI p = 0; p < 2; p++) {
   
         timerC.Start();

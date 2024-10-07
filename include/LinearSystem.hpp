@@ -63,7 +63,7 @@ public:
     OCP_INT Solve() { return LS->Solve(); }
 
     /// Setup dimensions.
-    OCP_USI AddDim(const OCP_USI& n)
+    inline OCP_USI AddDim(const OCP_USI& n)
     {
         dim += n;
         return dim;
@@ -130,7 +130,7 @@ public:
     /// Assign Rhs by Copying.
     void AssembleRhsCopy(const vector<OCP_DBL>& rhs);
     /// Return the number of iterations.
-    USI GetNumIters() { return LS->GetNumIters(); }
+    inline USI GetNumIters() { return LS->GetNumIters(); }
     /// Setup Domain
     void SetupDomain(const Domain& d) { domain = &d; }
     /// Calculate Global start

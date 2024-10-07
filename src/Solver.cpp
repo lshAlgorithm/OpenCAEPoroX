@@ -123,25 +123,34 @@ const OCPNRsuite& Solver::GoOneStepIsoT(Reservoir& rs, OCPControl& ctrl)
         UPDATE STEP BY STEP -- Li Shuhuai    
     */
     // Time marching with adaptive time stepsize
-    while (OCP_TRUE) {
-        if (ctrl.time.GetCurrentDt() < MIN_TIME_CURSTEP) {
-            if(CURRENT_RANK == MASTER_PROCESS)
-                OCP_WARNING("Time stepsize is too small: " + to_string(ctrl.time.GetCurrentDt()) + TIMEUNIT);
-            ctrl.StopSim = OCP_TRUE;
-            break;
-        }
+    #pragma omp parallel
+    {
+        int cnt = 0;
+        while (OCP_TRUE) {
+            #pragma omp single
+            {
+                cnt++;
+                printf("the number the go one step iter is %d\n", cnt);
+            }
+            if (ctrl.time.GetCurrentDt() < MIN_TIME_CURSTEP) {
+                if(CURRENT_RANK == MASTER_PROCESS)
+                    OCP_WARNING("Time stepsize is too small: " + to_string(ctrl.time.GetCurrentDt()) + TIMEUNIT);
+                ctrl.StopSim = OCP_TRUE;
+                break;
+            }
 
-        // Assemble linear system
-        IsoTSolver.AssembleMat(rs, ctrl);
-        cout << "===========AssembleMat==================\n";
-        // Solve linear system
-        IsoTSolver.SolveLinearSystem(rs, ctrl);
-        cout << "===========SolveLinearSystem==================\n";
-        if (!IsoTSolver.UpdateProperty(rs, ctrl)) {
-            continue;
+            // Assemble linear system
+            IsoTSolver.AssembleMat(rs, ctrl);
+            cout << "===========AssembleMat==================\n";
+            // Solve linear system
+            IsoTSolver.SolveLinearSystem(rs, ctrl);
+            cout << "===========SolveLinearSystem==================\n";
+            if (!IsoTSolver.UpdateProperty(rs, ctrl)) {
+                continue;
+            }
+            cout << "===========updateProperty==================\n";
+            if (IsoTSolver.FinishNR(rs, ctrl)) break;
         }
-        cout << "===========updateProperty==================\n";
-        if (IsoTSolver.FinishNR(rs, ctrl)) break;
     }
 
     // Finish current time step

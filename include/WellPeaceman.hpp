@@ -84,7 +84,6 @@ protected:
 	void CalProddG02(const Bulk& bk);
 	/// Calculate pressure of perforations
 	void CalPerfP() { 
-		#pragma omp parallel for
 		for (USI p = 0; p < numPerf; p++) 
 			perf[p].P = bhp + dG[p]; 
 	}
