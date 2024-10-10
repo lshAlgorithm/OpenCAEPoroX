@@ -693,14 +693,14 @@ void IsoT_FIM::Prepare(Reservoir& rs, const OCP_DBL& dt)
 {
     // Calculate well property at the beginning of next time step
     rs.allWells.PrepareWell(rs.bulk);
-    cout << "===========PrepareWell finished!!==================\n";
+    // cerr << "===========PrepareWell finished!!==================\t";
     // Calculate initial residual
     CalRes(rs, dt);
-    cout << "===========initial residual==================\n";
+    // cerr << "===========initial residual==================\t";
     NR.InitStep(rs.bulk.GetVarSet());
-    cout << "===========InitStep==================\n";
+    // cerr << "===========InitStep==================\t";
     NR.InitIter();
-    cout << "===========InitIter==================\n";
+    // cerr << "===========InitIter==================\t";
 }
 
 void IsoT_FIM::AssembleMat(LinearSystem&    ls,
@@ -709,12 +709,12 @@ void IsoT_FIM::AssembleMat(LinearSystem&    ls,
 {
     // Assemble matrix
     AssembleMatBulks(ls, rs, dt);
-    cout << "===========Bulks==================\n";
+    // cerr << "===========Bulks==================\t";
     AssembleMatWells(ls, rs, dt);
-    cout << "===========Wells==================\n";
+    // cerr << "===========Wells==================\t";
     // Assemble rhs -- from residual
     ls.AssembleRhsCopy(NR.res.resAbs);
-    cout << "===========Copy back==================\n";
+    // cerr << "===========Copy back==================\t";
 }
 
 
@@ -723,23 +723,23 @@ void IsoT_FIM::SolveLinearSystem(LinearSystem& ls,
                                  Reservoir&    rs,
                                  OCPControl&   ctrl)
 {
-#ifdef DEBUG
-    // Check if inf or nan occurs in A and b
-    ls.CheckEquation();
-#endif // DEBUG
+// #ifdef DEBUG
+//     // Check if inf or nan occurs in A and b
+//     ls.CheckEquation();
+// #endif // DEBUG
 
-    cout << "===========HERE WE ARE!==================\n";
+    // printf("Can you fucking entered??\t");
+    cerr << "===========HERE WE ARE!==================\t";
     GetWallTime timer;
     timer.Start();
-#pragma omp single
-{
-    cout << "============I can start time counter=====================\n";
+
+    printf("============I can start time counter=====================\t");
     ls.CalCommTerm(rs.GetNumOpenWell());
-    cout << "===========YOU CANNOT FINISH CAL COMMTERM???==================\n";
-}
+    printf("===========YOU CANNOT FINISH CAL COMMTERM???==================\t");
+
     ls.AssembleMatLinearSolver();
 
-    cout << "===========Assemble Mat Linear Solver==================\n";
+    cerr << "===========Assemble Mat Linear Solver==================\t";
     OCPTIME_ASSEMBLE_MAT_FOR_LS += timer.Stop() / TIME_S2MS;
     // Solve linear system
     
@@ -749,10 +749,13 @@ void IsoT_FIM::SolveLinearSystem(LinearSystem& ls,
         Solve! core code. Solve it. -- Li Shuhuai
         It seems to be encapsulated by petsc
     */
-    int status = ls.Solve();
-    cout << "===========Solve it!!!==================\n";
+    int status;
+    // #pragma omp single
+    // {
+        status = ls.Solve();
+    cerr << "===========Solve it!!!==================\t";
 // #pragma omp single
-{
+// {
 
     if (status < 0) {
         status = ls.GetNumIters();
@@ -761,8 +764,9 @@ void IsoT_FIM::SolveLinearSystem(LinearSystem& ls,
     OCPTIME_LSOLVER += timer.Stop() / TIME_S2MS;
 
     NR.UpdateIter(status);
-    cout << "===========Update over in SolveLinearSystem after assemble mat==================\n";
-}
+    cerr << "===========Update over in SolveLinearSystem after assemble mat==================\t";
+    // }
+// }
 
      
 #ifdef DEBUG
@@ -960,12 +964,12 @@ void IsoT_FIM::InitFlash(Bulk& bk)
 
 
         //if (n == 12637) {
-        //    cout << scientific << setprecision(6);
-        //    cout << "Vf : " << bvs.vf[n] << endl;
-        //    cout << "NW : " << bvs.Ni[n * 2] << endl;
-        //    cout << "NG : " << bvs.Ni[n * 2 + 1] << endl;
-        //    cout << "Sw : " << bvs.S[n * 2] << endl;
-        //    cout << "Sg : " << bvs.S[n * 2 + 1] << endl;
+        //    // cerr << scientific << setprecision(6);
+        //    // cerr << "Vf : " << bvs.vf[n] << endl;
+        //    // cerr << "NW : " << bvs.Ni[n * 2] << endl;
+        //    // cerr << "NG : " << bvs.Ni[n * 2 + 1] << endl;
+        //    // cerr << "Sw : " << bvs.S[n * 2] << endl;
+        //    // cerr << "Sg : " << bvs.S[n * 2 + 1] << endl;
         //    int a = 0;
         //}
     }
@@ -983,12 +987,12 @@ void IsoT_FIM::CalFlash(Bulk& bk)
 
 
         //if (n == 12637) {
-        //    cout << scientific << setprecision(6);
-        //    cout << "Vf : " << bvs.vf[n] << endl;
-        //    cout << "NW : " << bvs.Ni[n * 2] << endl;
-        //    cout << "NG : " << bvs.Ni[n * 2 + 1] << endl;
-        //    cout << "Sw : " << bvs.S[n * 2] << endl;
-        //    cout << "Sg : " << bvs.S[n * 2 + 1] << endl;
+        //    // cerr << scientific << setprecision(6);
+        //    // cerr << "Vf : " << bvs.vf[n] << endl;
+        //    // cerr << "NW : " << bvs.Ni[n * 2] << endl;
+        //    // cerr << "NG : " << bvs.Ni[n * 2 + 1] << endl;
+        //    // cerr << "Sw : " << bvs.S[n * 2] << endl;
+        //    // cerr << "Sg : " << bvs.S[n * 2 + 1] << endl;
         //    int a = 0;
         //}
     }
@@ -1188,8 +1192,7 @@ void IsoT_FIM::AssembleMatBulks(LinearSystem&    ls,
     USI      fluxnum;
 
     // #pragma omp for
-    #pragma omp single
-    {
+    #pragma omp for
     for (OCP_USI c = 0; c < conn.numConn; c++) {
 
         bId       = conn.iteratorConn[c].BId();
@@ -1250,7 +1253,6 @@ void IsoT_FIM::AssembleMatBulks(LinearSystem&    ls,
             OCP_ABORT("INF or INF in bmat !");
         }
 #endif
-    }
     }
 }
 
@@ -1820,7 +1822,7 @@ void IsoT_AIMc::SetFIMBulk(Reservoir& rs)
     MPI_Waitall(domain.numSendProc, domain.send_request.data(), MPI_STATUS_IGNORE);
 
     if (OCP_TRUE) {
-        cout << fixed << setprecision(2) << "Rank " << CURRENT_RANK << "  " << bk.bulkTypeAIM.GetNumFIMBulk() * 1.0 / bvs.nb * 100 << "% " << endl;
+        // cerr << fixed << setprecision(2) << "Rank " << CURRENT_RANK << "  " << bk.bulkTypeAIM.GetNumFIMBulk() * 1.0 / bvs.nb * 100 << "% " << endl;
     }
 }
 
@@ -2206,7 +2208,7 @@ void IsoT_AIMc::ResetToLastTimeStep(Reservoir& rs, OCPControl& ctrl)
     CalKrPcI(rs.bulk);
 
     //if (OCP_TRUE) {
-    //    cout << "Rank " << CURRENT_RANK << "  " << rs.bulk.bulkTypeAIM.GetNumFIMBulk() * 1.0 / rs.bulk.numBulk * 100 << "% " << endl;
+    //    // cerr << "Rank " << CURRENT_RANK << "  " << rs.bulk.bulkTypeAIM.GetNumFIMBulk() * 1.0 / rs.bulk.numBulk * 100 << "% " << endl;
     //}
 }
 

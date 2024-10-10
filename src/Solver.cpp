@@ -80,7 +80,7 @@ void Solver::RunSimulation(Reservoir& rs, OCPControl& ctrl, OCPOutput& output)
             */
             const OCPNRsuite& NR = GoOneStep(rs, ctrl);
 
-            cout << "===========YES YES YES, Go one step!==================\n";
+            cerr << "===========YES YES YES, Go one step!==================\t";
             output.SetVal(rs, ctrl, NR);
             if (ctrl.printLevel >= PRINT_ALL) {
                 // Print Summary and critical information at every time step
@@ -118,19 +118,20 @@ const OCPNRsuite& Solver::GoOneStepIsoT(Reservoir& rs, OCPControl& ctrl)
 {
     // Prepare for time marching
     IsoTSolver.Prepare(rs, ctrl);
-    cout << "===========Preparation finished!!!!!==================\n";
+    cerr << "===========Preparation finished!!!!!==================\t";
     /*
         UPDATE STEP BY STEP -- Li Shuhuai    
     */
     // Time marching with adaptive time stepsize
-    #pragma omp parallel
-    {
+
+    // #pragma omp parallel
+    // {
         int cnt = 0;
         while (OCP_TRUE) {
             #pragma omp single
             {
                 cnt++;
-                printf("the number the go one step iter is %d\n", cnt);
+                printf("the number the go one step iter is %d\t", cnt);
             }
             if (ctrl.time.GetCurrentDt() < MIN_TIME_CURSTEP) {
                 if(CURRENT_RANK == MASTER_PROCESS)
@@ -140,21 +141,26 @@ const OCPNRsuite& Solver::GoOneStepIsoT(Reservoir& rs, OCPControl& ctrl)
             }
 
             // Assemble linear system
-            IsoTSolver.AssembleMat(rs, ctrl);
-            cout << "===========AssembleMat==================\n";
+            #pragma omp parallel
+            {
+                IsoTSolver.AssembleMat(rs, ctrl);
+            }
+            cerr << "===========AssembleMat==================\t";
             // Solve linear system
+
+
             IsoTSolver.SolveLinearSystem(rs, ctrl);
-            cout << "===========SolveLinearSystem==================\n";
+            cerr << "===========SolveLinearSystem==================\t";
             if (!IsoTSolver.UpdateProperty(rs, ctrl)) {
                 continue;
             }
-            cout << "===========updateProperty==================\n";
+            cerr << "===========updateProperty==================\t";
             if (IsoTSolver.FinishNR(rs, ctrl)) break;
         }
-    }
+    // }
 
     // Finish current time step
-    cout << "===========OCP Iteration finished!==================\n";
+    cerr << "===========OCP Iteration finished!==================\t";
     IsoTSolver.FinishStep(rs, ctrl);
 
     return IsoTSolver.GetNRsuite();

@@ -122,7 +122,7 @@ public:
     /// Return the num of Components
     inline USI GetComNum() const { return bulk.GetComNum(); }
     /// Return num of open well
-    inline USI GetNumOpenWell() const { return allWells.GetNumOpenWell(); }
+    USI GetNumOpenWell() const { return allWells.GetNumOpenWell(); }
     /// If oil exist
     inline OCP_BOOL IfOilExist() const { return bulk.vs.o >= 0; }
     /// If gas exist

@@ -59,9 +59,9 @@ void PetscSolver::AssembleMat(const vector<vector<USI>>& colId,
     const USI blockSize = blockdim * blockdim;
     vector<OCP_SLL> tmpJ;
     // Assemble iA, jA, A
+    cerr << "we are in dark place... AssembleSolverMat\t";
 
-    #pragma omp single
-    {
+
     iA[0] = 0;
 
     // #pragma omp for schedule(guided)
@@ -69,11 +69,13 @@ void PetscSolver::AssembleMat(const vector<vector<USI>>& colId,
         const USI nnzR = colId[i - 1].size();
 
         tmpJ.resize(nnzR);
-        
+        cerr << "The problem is here??\t";
+        // #pragma omp for
         for (USI j = 0; j < nnzR; j++) {
             tmpJ[j] = global_index->at(colId[i - 1][j]);
         }
 
+        cerr << "The problem is here??\t";
         iA[i] = iA[i - 1] + nnzR;
         copy(tmpJ.begin(), tmpJ.end(), &jA[iA[i - 1]]);
         copy(val[i - 1].begin(), val[i - 1].end(), &A[(iA[i - 1]) * blockSize]);
@@ -82,7 +84,8 @@ void PetscSolver::AssembleMat(const vector<vector<USI>>& colId,
 
     b = rhs.data();
     x = u.data();
-    }
+
+    cerr << "I leave\t";
 }
 
 

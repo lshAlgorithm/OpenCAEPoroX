@@ -146,17 +146,22 @@ void LinearSystem::OutputSolution(const string& fileU) const
 void LinearSystem::CheckEquation() const
 {
     // check A
+    #pragma omp for
     for (OCP_USI n = 0; n < dim; n++) {
+        cerr << "we see " << n << " out of " << dim <<'\t';
         for (auto v : val[n]) {
             if (!isfinite(v)) {
+                cerr << "shit, we die!\t";
                 OCP_ABORT("NAN or INF in MAT");
             }
         }
     }
     // check b
     OCP_USI len = dim * blockDim;
+    #pragma omp for
     for (OCP_USI n = 0; n < len; n++) {
         if (!isfinite(b[n])) {
+            cerr << "shit, B die\t";
             OCP_ABORT("NAN or INF in rhs");
         }
     }

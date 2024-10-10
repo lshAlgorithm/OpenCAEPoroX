@@ -102,13 +102,13 @@ void IsothermalSolver::AssembleMat(const Reservoir& rs, OCPControl& ctrl)
 void IsothermalSolver::SolveLinearSystem(Reservoir& rs, OCPControl& ctrl)
 { 
 
-    cout << "===========I entered==================\n";
+    //cout << "===========I entered==================\n";
     switch (method) {
         case IMPEC:
             impec.SolveLinearSystem(LSolver, rs, ctrl);
             break;
         case FIM:
-        cout << "===========Begin to solve==================\n";
+        //cout << "===========Begin to solve==================\n";
             fim.SolveLinearSystem(LSolver, rs, ctrl);
             break;
         case AIMc:
